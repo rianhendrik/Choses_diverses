@@ -126,14 +126,16 @@ print "Initial regression"  bh r2 cll clu;
 *Easy loop explained in class;
 obs = (1:n) ;
 
-beta1 = J(1, 30) ;
+*Creating empty vectors for betas;
+beta1 = J(1, 30) ; 
 beta2 = J(1, 30) ;
 beta3 = J(1, 30) ;
 beta4 = J(1, 30) ;
 beta5 = J(1, 30) ;
 
+*Hier is 'n baie makliker loop;
 do i = 1 to n ; 
-	obs_s = loc(obs^=i) ;
+	obs_s = loc(obs^=i) ; 
 
 	y = y1[obs_s,] ;
 	x = x1[obs_s,] ;
@@ -157,6 +159,9 @@ close beta_table;
 
 proc print data = beta_table;
 run;
+
+*BOOTSTRAPPING;
+
 
 
 
