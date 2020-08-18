@@ -126,16 +126,14 @@ print "Initial regression"  bh r2 cll clu;
 *Easy loop explained in class;
 obs = (1:n) ;
 
-*Creating empty vectors for betas;
-beta1 = J(1, 30) ; 
+beta1 = J(1, 30) ;
 beta2 = J(1, 30) ;
 beta3 = J(1, 30) ;
 beta4 = J(1, 30) ;
 beta5 = J(1, 30) ;
 
-*Hier is 'n baie makliker loop;
 do i = 1 to n ; 
-	obs_s = loc(obs^=i) ; 
+	obs_s = loc(obs^=i) ;
 
 	y = y1[obs_s,] ;
 	x = x1[obs_s,] ;
@@ -157,19 +155,98 @@ create beta_table var {beta1 beta2 beta3 beta4 beta5} ;
 append;
 close beta_table;
 
+
+
 proc print data = beta_table;
 run;
 
-*BOOTSTRAPPING;
+proc iml;
+
+use b;
+read all into x_and_y;
+
+n = nrow(x_and_y);
+one = J(n, 1, 1);
+y1 = x_and_y[,3];
+x_1 = one;
+x_2 = x_and_y[,4];
+x_3 = x_and_y[,1];
+x_4 = x_and_y[,5];
+x_5 = x_and_y[,2];
+x1 = x_1||x_2||x_3||x_4||x_5;
+
+start reg ;
+k=ncol(x) ;
+bh=inv(x`*x)*x`*y ;
+res=y-x*bh ;
+ess=res`*res ;
+tss=(y-y[:,])[##,] ;
+rss=tss-ess ;
+df_m = ncol(x)-1 ;
+df_e = n-ncol(x) ;
+df_t = n-1 ;
+ms_m = rss/df_m ;
+ms_e = ess/df_e ;
+f=ms_m/ms_e ;
+p_f = 1-probf(f,df_m,df_e) ;
+
+rmse = sqrt(ms_e) ;
+meany = y[:,] ;
+cv=rmse/meany*100 ;
+
+r2=rss/tss ;
+ar2 = 1 - ((1-r2)*((n-1)/(n-k))) ;
+
+seb=sqrt(vecdiag(ms_e*inv(x`*x))) ;
+t=bh/seb ;
+p_t = 2*(1-probt(abs(t),df_e)) ;
+
+cll = bh - tinv(0.975,df_e)*seb ;
+clu = bh + tinv(0.975,df_e)*seb ;
+
+finish reg ;
+
+
+beta1 = J(1, 100) ;
+beta2 = J(1, 100) ;
+beta3 = J(1, 100) ;
+beta4 = J(1, 100) ;
+beta5 = J(1, 100) ;
+
+samples = 100;
+n = 30;
+obs = (1:n);
+
+do i = 1 to samples;
+	s = sample(obs, 30);
+	y = y1[s,];
+	x = x1[s,];
+	call reg;
+	b1 = bh[1] ;
+	b2 = bh[2] ;
+	b3 = bh[3] ;
+	b4 = bh[4] ;
+	b5 = bh[5] ;
+	beta1[i] = b1 ;
+	beta2[i] = b2 ;
+	beta3[i] = b3 ;
+	beta4[i] = b4 ;
+	beta5[i] = b5 ;
+end;
+
+create beta_sample_100 var {beta1 beta2 beta3 beta4 beta5} ;
+append;
+close beta_sample_100;
+
+proc print data = beta_sample_100;
+run;
 
 
 
+proc univariate data = beta_sample_100 normal;
+histogram;
+run;
 
-
-
-
-
-
-
-
-
+proc univariate data = beta_table normal;
+histogram;
+run;
