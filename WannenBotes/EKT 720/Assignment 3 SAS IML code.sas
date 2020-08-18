@@ -103,37 +103,62 @@ print "Initial regression"  bh r2 cll clu;
 
 *3b - using a 'leave one out' approach to regression.;
 *Different loops that we could use:;
-do ii = 1 to nrow(x_and_y) ;
-  if ii=1 then do ;
-    y = y1[2:nrow(y1),] ;
-    x = x1[2:nrow(x1),] ;
-  end ;
-  if (ii>1)  then do ;
-   if  (ii < nrow(x_and_y)) then do ;
-   y = y1[1:ii-1,] // 
-       y1[ii+1:nrow(y1),] ;
-   x = x1[1:ii-1,] // 
-       x1[ii+1:nrow(x1),] ;
-   end;
-  end ;
-  if ii=nrow(x_and_y) then do ;
-    y = y1[1:nrow(y1)-1,] ;
-    x = x1[1:nrow(x1)-1,] ;
-  end ;
-call reg; *Will I have to include a 'call reg' in each loop? I believe so;
-print bh;
+*do ii = 1 to nrow(x_and_y) ;
+  *if ii=1 then do ;
+    *y = y1[2:nrow(y1),] ;
+    *x = x1[2:nrow(x1),] ;
+  *end ;
+  *if (ii>1)  then do ;
+   *if  (ii < nrow(x_and_y)) then do ;
+   *y = y1[1:ii-1,] // 
+    *   y1[ii+1:nrow(y1),] ;
+   *x = x1[1:ii-1,] // 
+  *     x1[ii+1:nrow(x1),] ;
+  * end;
+  *end ;
+ * if ii=nrow(x_and_y) then do ;
+ *   y = y1[1:nrow(y1)-1,] ;
+ *   x = x1[1:nrow(x1)-1,] ;
+ * end ;
+*call reg; *Will I have to include a 'call reg' in each loop? I believe so;
+*print bh;
 
 *Easy loop explained in class;
-obs = (1:n);
+obs = (1:n) ;
+
+beta1 = J(1, 30) ;
+beta2 = J(1, 30) ;
+beta3 = J(1, 30) ;
+beta4 = J(1, 30) ;
+beta5 = J(1, 30) ;
 
 do i = 1 to n ; 
 	obs_s = loc(obs^=i) ;
-	print obs_s;
-end;
-
 
 	y = y1[obs_s,] ;
 	x = x1[obs_s,] ;
+
+	call reg ;
+	b1 = bh[1] ;
+	b2 = bh[2] ;
+	b3 = bh[3] ;
+	b4 = bh[4] ;
+	b5 = bh[5] ;
+	beta1[i] = b1 ;
+	beta2[i] = b2 ;
+	beta3[i] = b3 ;
+	beta4[i] = b4 ;
+	beta5[i] = b5 ;
+end ;
+
+create beta_table var {beta1 beta2 beta3 beta4 beta5} ;
+append;
+close beta_table;
+
+proc print data = beta_table;
+run;
+
+
 
 
 
