@@ -1,4 +1,6 @@
 options nocenter ;
+ods html close;
+ods html;
 data a;
 input income1 income2 house stand double prop;
 joint_income = income1 + income2;
@@ -100,29 +102,7 @@ y = y1;
 call reg;
 print "Initial regression"  bh r2 cll clu;
 
-
-*3b - using a 'leave one out' approach to regression.;
-*Different loops that we could use:;
-*do ii = 1 to nrow(x_and_y) ;
-  *if ii=1 then do ;
-    *y = y1[2:nrow(y1),] ;
-    *x = x1[2:nrow(x1),] ;
-  *end ;
-  *if (ii>1)  then do ;
-   *if  (ii < nrow(x_and_y)) then do ;
-   *y = y1[1:ii-1,] // 
-    *   y1[ii+1:nrow(y1),] ;
-   *x = x1[1:ii-1,] // 
-  *     x1[ii+1:nrow(x1),] ;
-  * end;
-  *end ;
- * if ii=nrow(x_and_y) then do ;
- *   y = y1[1:nrow(y1)-1,] ;
- *   x = x1[1:nrow(x1)-1,] ;
- * end ;
-*call reg; *Will I have to include a 'call reg' in each loop? I believe so;
-*print bh;
-
+*3b-c: 'a leave on out approach to regression';
 *Easy loop explained in class;
 obs = (1:n) ;
 
@@ -155,58 +135,19 @@ create beta_table var {beta1 beta2 beta3 beta4 beta5} ;
 append;
 close beta_table;
 
+*3d: Taking a single bootstrap sample from n, and running a regression (random seed set as 0);
 
+call randseed(123, reinit);
+one_sample = sample(obs, 30);
+y = y1[one_sample,];
+x = x1[one_sample,];
 
-proc print data = beta_table;
-run;
+call reg;
+print 'betas from single bootstrap sample' bh;
 
-proc iml;
+*3e: Bootstrapping, and running regressions on 100 bootstrapped samples.
 
-use b;
-read all into x_and_y;
-
-n = nrow(x_and_y);
-one = J(n, 1, 1);
-y1 = x_and_y[,3];
-x_1 = one;
-x_2 = x_and_y[,4];
-x_3 = x_and_y[,1];
-x_4 = x_and_y[,5];
-x_5 = x_and_y[,2];
-x1 = x_1||x_2||x_3||x_4||x_5;
-
-start reg ;
-k=ncol(x) ;
-bh=inv(x`*x)*x`*y ;
-res=y-x*bh ;
-ess=res`*res ;
-tss=(y-y[:,])[##,] ;
-rss=tss-ess ;
-df_m = ncol(x)-1 ;
-df_e = n-ncol(x) ;
-df_t = n-1 ;
-ms_m = rss/df_m ;
-ms_e = ess/df_e ;
-f=ms_m/ms_e ;
-p_f = 1-probf(f,df_m,df_e) ;
-
-rmse = sqrt(ms_e) ;
-meany = y[:,] ;
-cv=rmse/meany*100 ;
-
-r2=rss/tss ;
-ar2 = 1 - ((1-r2)*((n-1)/(n-k))) ;
-
-seb=sqrt(vecdiag(ms_e*inv(x`*x))) ;
-t=bh/seb ;
-p_t = 2*(1-probt(abs(t),df_e)) ;
-
-cll = bh - tinv(0.975,df_e)*seb ;
-clu = bh + tinv(0.975,df_e)*seb ;
-
-finish reg ;
-
-
+*The loop for bootstrap sampling, and storing the betas obtained from regressions on tehse samples;
 beta1 = J(1, 100) ;
 beta2 = J(1, 100) ;
 beta3 = J(1, 100) ;
@@ -215,7 +156,6 @@ beta5 = J(1, 100) ;
 
 samples = 100;
 n = 30;
-obs = (1:n);
 
 do i = 1 to samples;
 	s = sample(obs, 30);
@@ -238,15 +178,45 @@ create beta_sample_100 var {beta1 beta2 beta3 beta4 beta5} ;
 append;
 close beta_sample_100;
 
-proc print data = beta_sample_100;
+
+proc print data = beta_table; *Obtaining the betas table to be provided as results from 'leave one out' regressions.;
+run;
+
+proc print data = beta_sample_100; *Obtaining the betas table to be proveded as results from the regressions run on 100 bootstrap samples;
 run;
 
 
+*Further exploratory analysis performed on betas to substantiate comments on these observed betas;
 
-proc univariate data = beta_sample_100 normal;
-histogram;
-run;
+/*proc univariate data = beta_table normal;*/
+/*histogram;*/
+/*run;*/
+/**/
+/*proc univariate data = beta_sample_100 normal;*/
+/*histogram;*/
+/*run;*/
 
-proc univariate data = beta_table normal;
-histogram;
-run;
+
+
+*Other loops which could be considered, but which are more complex than the one used;
+*3b - using a 'leave one out' approach to regression.;
+*Different loops that we could use:;
+*do ii = 1 to nrow(x_and_y) ;
+  *if ii=1 then do ;
+    *y = y1[2:nrow(y1),] ;
+    *x = x1[2:nrow(x1),] ;
+  *end ;
+  *if (ii>1)  then do ;
+   *if  (ii < nrow(x_and_y)) then do ;
+   *y = y1[1:ii-1,] // 
+    *   y1[ii+1:nrow(y1),] ;
+   *x = x1[1:ii-1,] // 
+  *     x1[ii+1:nrow(x1),] ;
+  * end;
+  *end ;
+ * if ii=nrow(x_and_y) then do ;
+ *   y = y1[1:nrow(y1)-1,] ;
+ *   x = x1[1:nrow(x1)-1,] ;
+ * end ;
+*call reg; *Will I have to include a 'call reg' in each loop? I believe so;
+*print bh;
