@@ -1,0 +1,4591 @@
+From: "Saved by Internet Explorer 11"
+Subject: SAS Output
+Date: Thu, 20 Aug 2020 12:51:21 +0200
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 720\Assignments\Assignment 1 and 2\sashtml32.htm
+X-MimeOLE: Produced By Microsoft MimeOLE
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content=3D"IE=3D5.0000" =
+http-equiv=3D"X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=3DGENERATOR content=3D"MSHTML 11.00.10570.1001">
+<META content=3D"text/html; charset=3Dwindows-1252" =
+http-equiv=3DContent-type>
+<STYLE type=3Dtext/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS =
+Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px =
+solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: =
+normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; =
+BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: =
+8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; =
+BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: =
+0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: =
+normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: =
+#c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: =
+#c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; =
+BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: =
+#000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: =
+#fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; =
+BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: =
+1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: =
+normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; =
+FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; =
+MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany =
+AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: =
+normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: =
+#fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; =
+BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; =
+BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: =
+left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; =
+FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: =
+#b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: =
+normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: =
+'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; =
+BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; =
+FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: =
+#edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; =
+BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; =
+BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: =
+1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, =
+'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: =
+100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: =
+#000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 =
+0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: =
+#fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; =
+FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; =
+BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: =
+normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; =
+PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=3Dbody onload=3Dstartup() onunload=3Dshutdown()>
+<SCRIPT language=3Djavascript type=3Dtext/javascript>
+<!--=20
+var _info =3D navigator.userAgent
+var _ie =3D (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 =3D _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=3Dbranch><A name=3DIDX></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure IML: bh_r2_cll_clu" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l headerempty" scope=3Dcol>&nbsp;</TH>
+    <TH class=3D"r b header" scope=3Dcol>bh</TH>
+    <TH class=3D"r b header" scope=3Dcol>r2</TH>
+    <TH class=3D"r b header" scope=3Dcol>cll</TH>
+    <TH class=3D"r b header" scope=3Dcol>clu</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"l data">Initial regression</TD>
+    <TD class=3D"r data">106.85085</TD>
+    <TD class=3D"r data">0.9270219</TD>
+    <TD class=3D"r data" noWrap>-23.99413</TD>
+    <TD class=3D"r data">237.69583</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">0.7970982</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">0.6594237</TD>
+    <TD class=3D"r data">0.9347727</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">0.4954084</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">0.4070605</TD>
+    <TD class=3D"r data">0.5837563</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">139.95912</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data" noWrap>-0.207258</TD>
+    <TD class=3D"r data">280.12549</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">133.03019</TD>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TD class=3D"r data">93.507091</TD>
+    <TD class=3D"r =
+data">172.55328</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX1></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure IML: bh" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"l headerempty" scope=3Dcol>&nbsp;</TH>
+    <TH class=3D"r b header" scope=3Dcol>bh</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"l data">betas from single bootstrap sample</TD>
+    <TD class=3D"r data">177.91914</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">0.7164871</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">0.4892816</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r data">125.19825</TD></TR>
+  <TR>
+    <TD class=3D"l data">&nbsp;</TD>
+    <TD class=3D"r =
+data">107.50688</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX2></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Print: Table WORK.BETA_TABLE" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r header" scope=3Dcol>Obs.</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA1</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA2</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA3</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA4</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA5</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>1</TH>
+    <TD class=3D"r data">127.701</TD>
+    <TD class=3D"r data">0.78529</TD>
+    <TD class=3D"r data">0.48890</TD>
+    <TD class=3D"r data">121.125</TD>
+    <TD class=3D"r data">134.828</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>2</TH>
+    <TD class=3D"r data">105.130</TD>
+    <TD class=3D"r data">0.79765</TD>
+    <TD class=3D"r data">0.49650</TD>
+    <TD class=3D"r data">140.265</TD>
+    <TD class=3D"r data">133.442</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>3</TH>
+    <TD class=3D"r data">109.861</TD>
+    <TD class=3D"r data">0.79559</TD>
+    <TD class=3D"r data">0.49276</TD>
+    <TD class=3D"r data">139.716</TD>
+    <TD class=3D"r data">129.577</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>4</TH>
+    <TD class=3D"r data">91.216</TD>
+    <TD class=3D"r data">0.81689</TD>
+    <TD class=3D"r data">0.48795</TD>
+    <TD class=3D"r data">159.391</TD>
+    <TD class=3D"r data">144.977</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>5</TH>
+    <TD class=3D"r data">104.567</TD>
+    <TD class=3D"r data">0.78634</TD>
+    <TD class=3D"r data">0.49694</TD>
+    <TD class=3D"r data">148.018</TD>
+    <TD class=3D"r data">134.273</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>6</TH>
+    <TD class=3D"r data">65.730</TD>
+    <TD class=3D"r data">0.81016</TD>
+    <TD class=3D"r data">0.51912</TD>
+    <TD class=3D"r data">165.868</TD>
+    <TD class=3D"r data">118.558</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>7</TH>
+    <TD class=3D"r data">110.178</TD>
+    <TD class=3D"r data">0.79417</TD>
+    <TD class=3D"r data">0.49417</TD>
+    <TD class=3D"r data">137.989</TD>
+    <TD class=3D"r data">133.331</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>8</TH>
+    <TD class=3D"r data">105.768</TD>
+    <TD class=3D"r data">0.79451</TD>
+    <TD class=3D"r data">0.49601</TD>
+    <TD class=3D"r data">142.767</TD>
+    <TD class=3D"r data">133.138</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>9</TH>
+    <TD class=3D"r data">105.607</TD>
+    <TD class=3D"r data">0.80077</TD>
+    <TD class=3D"r data">0.49617</TD>
+    <TD class=3D"r data">137.406</TD>
+    <TD class=3D"r data">133.506</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>10</TH>
+    <TD class=3D"r data">79.013</TD>
+    <TD class=3D"r data">0.79835</TD>
+    <TD class=3D"r data">0.51778</TD>
+    <TD class=3D"r data">160.008</TD>
+    <TD class=3D"r data">130.215</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>11</TH>
+    <TD class=3D"r data">143.843</TD>
+    <TD class=3D"r data">0.77429</TD>
+    <TD class=3D"r data">0.48911</TD>
+    <TD class=3D"r data">112.656</TD>
+    <TD class=3D"r data">129.191</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>12</TH>
+    <TD class=3D"r data">114.673</TD>
+    <TD class=3D"r data">0.79769</TD>
+    <TD class=3D"r data">0.49170</TD>
+    <TD class=3D"r data">132.393</TD>
+    <TD class=3D"r data">132.566</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>13</TH>
+    <TD class=3D"r data">107.432</TD>
+    <TD class=3D"r data">0.81623</TD>
+    <TD class=3D"r data">0.48616</TD>
+    <TD class=3D"r data">131.096</TD>
+    <TD class=3D"r data">135.948</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>14</TH>
+    <TD class=3D"r data">107.866</TD>
+    <TD class=3D"r data">0.80175</TD>
+    <TD class=3D"r data">0.49838</TD>
+    <TD class=3D"r data">132.453</TD>
+    <TD class=3D"r data">132.160</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>15</TH>
+    <TD class=3D"r data">106.992</TD>
+    <TD class=3D"r data">0.79701</TD>
+    <TD class=3D"r data">0.49536</TD>
+    <TD class=3D"r data">139.871</TD>
+    <TD class=3D"r data">133.088</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>16</TH>
+    <TD class=3D"r data">107.394</TD>
+    <TD class=3D"r data">0.79405</TD>
+    <TD class=3D"r data">0.50184</TD>
+    <TD class=3D"r data">134.633</TD>
+    <TD class=3D"r data">132.304</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>17</TH>
+    <TD class=3D"r data">107.239</TD>
+    <TD class=3D"r data">0.79596</TD>
+    <TD class=3D"r data">0.49519</TD>
+    <TD class=3D"r data">140.797</TD>
+    <TD class=3D"r data">132.841</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>18</TH>
+    <TD class=3D"r data">104.619</TD>
+    <TD class=3D"r data">0.79011</TD>
+    <TD class=3D"r data">0.49389</TD>
+    <TD class=3D"r data">149.970</TD>
+    <TD class=3D"r data">133.537</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>19</TH>
+    <TD class=3D"r data">113.329</TD>
+    <TD class=3D"r data">0.79567</TD>
+    <TD class=3D"r data">0.48984</TD>
+    <TD class=3D"r data">139.423</TD>
+    <TD class=3D"r data">131.927</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>20</TH>
+    <TD class=3D"r data">92.173</TD>
+    <TD class=3D"r data">0.80040</TD>
+    <TD class=3D"r data">0.50512</TD>
+    <TD class=3D"r data">152.486</TD>
+    <TD class=3D"r data">130.658</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>21</TH>
+    <TD class=3D"r data">125.459</TD>
+    <TD class=3D"r data">0.77685</TD>
+    <TD class=3D"r data">0.49781</TD>
+    <TD class=3D"r data">127.409</TD>
+    <TD class=3D"r data">130.269</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>22</TH>
+    <TD class=3D"r data">102.599</TD>
+    <TD class=3D"r data">0.80374</TD>
+    <TD class=3D"r data">0.49886</TD>
+    <TD class=3D"r data">135.927</TD>
+    <TD class=3D"r data">133.906</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>23</TH>
+    <TD class=3D"r data">100.895</TD>
+    <TD class=3D"r data">0.80639</TD>
+    <TD class=3D"r data">0.49958</TD>
+    <TD class=3D"r data">136.692</TD>
+    <TD class=3D"r data">137.362</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>24</TH>
+    <TD class=3D"r data">104.806</TD>
+    <TD class=3D"r data">0.79481</TD>
+    <TD class=3D"r data">0.49708</TD>
+    <TD class=3D"r data">143.007</TD>
+    <TD class=3D"r data">134.204</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>25</TH>
+    <TD class=3D"r data">123.567</TD>
+    <TD class=3D"r data">0.76956</TD>
+    <TD class=3D"r data">0.50122</TD>
+    <TD class=3D"r data">122.824</TD>
+    <TD class=3D"r data">135.928</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>26</TH>
+    <TD class=3D"r data">108.459</TD>
+    <TD class=3D"r data">0.79620</TD>
+    <TD class=3D"r data">0.49258</TD>
+    <TD class=3D"r data">142.484</TD>
+    <TD class=3D"r data">132.474</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>27</TH>
+    <TD class=3D"r data">94.302</TD>
+    <TD class=3D"r data">0.84048</TD>
+    <TD class=3D"r data">0.47162</TD>
+    <TD class=3D"r data">149.854</TD>
+    <TD class=3D"r data">136.838</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>28</TH>
+    <TD class=3D"r data">109.138</TD>
+    <TD class=3D"r data">0.79472</TD>
+    <TD class=3D"r data">0.49098</TD>
+    <TD class=3D"r data">145.239</TD>
+    <TD class=3D"r data">132.025</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>29</TH>
+    <TD class=3D"r data">110.242</TD>
+    <TD class=3D"r data">0.78914</TD>
+    <TD class=3D"r data">0.49881</TD>
+    <TD class=3D"r data">135.093</TD>
+    <TD class=3D"r data">133.912</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>30</TH>
+    <TD class=3D"r data">105.144</TD>
+    <TD class=3D"r data">0.80496</TD>
+    <TD class=3D"r data">0.48332</TD>
+    <TD class=3D"r data">149.211</TD>
+    <TD class=3D"r =
+data">134.522</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX3></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Print: Table WORK.BETA_SAMPLE_100_1" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r header" scope=3Dcol>Obs.</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA1_1</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA2_1</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA3_1</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA4_1</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA5_1</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>1</TH>
+    <TD class=3D"r data" noWrap>-55.878</TD>
+    <TD class=3D"r data">0.90464</TD>
+    <TD class=3D"r data">0.56938</TD>
+    <TD class=3D"r data">228.777</TD>
+    <TD class=3D"r data">122.564</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>2</TH>
+    <TD class=3D"r data">121.007</TD>
+    <TD class=3D"r data">0.79604</TD>
+    <TD class=3D"r data">0.49211</TD>
+    <TD class=3D"r data">130.594</TD>
+    <TD class=3D"r data">129.296</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>3</TH>
+    <TD class=3D"r data">55.440</TD>
+    <TD class=3D"r data">0.89466</TD>
+    <TD class=3D"r data">0.45727</TD>
+    <TD class=3D"r data">188.128</TD>
+    <TD class=3D"r data">108.772</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>4</TH>
+    <TD class=3D"r data">129.825</TD>
+    <TD class=3D"r data">0.74270</TD>
+    <TD class=3D"r data">0.51293</TD>
+    <TD class=3D"r data">140.555</TD>
+    <TD class=3D"r data">122.176</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>5</TH>
+    <TD class=3D"r data">225.443</TD>
+    <TD class=3D"r data">0.61810</TD>
+    <TD class=3D"r data">0.52352</TD>
+    <TD class=3D"r data">42.729</TD>
+    <TD class=3D"r data">136.674</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>6</TH>
+    <TD class=3D"r data">92.455</TD>
+    <TD class=3D"r data">0.75886</TD>
+    <TD class=3D"r data">0.52390</TD>
+    <TD class=3D"r data">174.436</TD>
+    <TD class=3D"r data">131.602</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>7</TH>
+    <TD class=3D"r data">84.569</TD>
+    <TD class=3D"r data">0.82352</TD>
+    <TD class=3D"r data">0.50416</TD>
+    <TD class=3D"r data">147.275</TD>
+    <TD class=3D"r data">123.910</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>8</TH>
+    <TD class=3D"r data">21.760</TD>
+    <TD class=3D"r data">0.81597</TD>
+    <TD class=3D"r data">0.56341</TD>
+    <TD class=3D"r data">186.237</TD>
+    <TD class=3D"r data">105.593</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>9</TH>
+    <TD class=3D"r data">167.900</TD>
+    <TD class=3D"r data">0.69136</TD>
+    <TD class=3D"r data">0.51784</TD>
+    <TD class=3D"r data">104.962</TD>
+    <TD class=3D"r data">149.692</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>10</TH>
+    <TD class=3D"r data">76.618</TD>
+    <TD class=3D"r data">0.82163</TD>
+    <TD class=3D"r data">0.50218</TD>
+    <TD class=3D"r data">157.150</TD>
+    <TD class=3D"r data">138.804</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>11</TH>
+    <TD class=3D"r data">44.295</TD>
+    <TD class=3D"r data">0.91505</TD>
+    <TD class=3D"r data">0.47180</TD>
+    <TD class=3D"r data">162.874</TD>
+    <TD class=3D"r data">161.467</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>12</TH>
+    <TD class=3D"r data">81.566</TD>
+    <TD class=3D"r data">0.76907</TD>
+    <TD class=3D"r data">0.54735</TD>
+    <TD class=3D"r data">167.670</TD>
+    <TD class=3D"r data">93.094</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>13</TH>
+    <TD class=3D"r data">52.443</TD>
+    <TD class=3D"r data">0.88437</TD>
+    <TD class=3D"r data">0.50551</TD>
+    <TD class=3D"r data">158.825</TD>
+    <TD class=3D"r data">158.545</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>14</TH>
+    <TD class=3D"r data">34.143</TD>
+    <TD class=3D"r data">0.90897</TD>
+    <TD class=3D"r data">0.52625</TD>
+    <TD class=3D"r data">124.173</TD>
+    <TD class=3D"r data">124.216</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>15</TH>
+    <TD class=3D"r data">105.697</TD>
+    <TD class=3D"r data">0.75137</TD>
+    <TD class=3D"r data">0.53622</TD>
+    <TD class=3D"r data">139.348</TD>
+    <TD class=3D"r data">124.339</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>16</TH>
+    <TD class=3D"r data">207.993</TD>
+    <TD class=3D"r data">0.75968</TD>
+    <TD class=3D"r data">0.44713</TD>
+    <TD class=3D"r data">87.886</TD>
+    <TD class=3D"r data">130.010</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>17</TH>
+    <TD class=3D"r data">84.970</TD>
+    <TD class=3D"r data">0.90108</TD>
+    <TD class=3D"r data">0.49297</TD>
+    <TD class=3D"r data">91.527</TD>
+    <TD class=3D"r data">104.691</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>18</TH>
+    <TD class=3D"r data">178.849</TD>
+    <TD class=3D"r data">0.67361</TD>
+    <TD class=3D"r data">0.48661</TD>
+    <TD class=3D"r data">143.590</TD>
+    <TD class=3D"r data">137.544</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>19</TH>
+    <TD class=3D"r data">100.965</TD>
+    <TD class=3D"r data">0.75149</TD>
+    <TD class=3D"r data">0.55247</TD>
+    <TD class=3D"r data">120.562</TD>
+    <TD class=3D"r data">120.905</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>20</TH>
+    <TD class=3D"r data">41.575</TD>
+    <TD class=3D"r data">0.80012</TD>
+    <TD class=3D"r data">0.54484</TD>
+    <TD class=3D"r data">204.420</TD>
+    <TD class=3D"r data">115.451</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>21</TH>
+    <TD class=3D"r data">138.799</TD>
+    <TD class=3D"r data">0.80960</TD>
+    <TD class=3D"r data">0.48182</TD>
+    <TD class=3D"r data">80.049</TD>
+    <TD class=3D"r data">126.474</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>22</TH>
+    <TD class=3D"r data">150.108</TD>
+    <TD class=3D"r data">0.80401</TD>
+    <TD class=3D"r data">0.46261</TD>
+    <TD class=3D"r data">113.125</TD>
+    <TD class=3D"r data">134.647</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>23</TH>
+    <TD class=3D"r data">60.792</TD>
+    <TD class=3D"r data">0.95340</TD>
+    <TD class=3D"r data">0.40695</TD>
+    <TD class=3D"r data">167.302</TD>
+    <TD class=3D"r data">154.143</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>24</TH>
+    <TD class=3D"r data">62.583</TD>
+    <TD class=3D"r data">0.75766</TD>
+    <TD class=3D"r data">0.53991</TD>
+    <TD class=3D"r data">189.578</TD>
+    <TD class=3D"r data">146.612</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>25</TH>
+    <TD class=3D"r data">75.508</TD>
+    <TD class=3D"r data">0.93560</TD>
+    <TD class=3D"r data">0.40450</TD>
+    <TD class=3D"r data">178.723</TD>
+    <TD class=3D"r =
+data">167.615</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX4></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Print: Table WORK.BETA_SAMPLE_100_2" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r header" scope=3Dcol>Obs.</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA1_2</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA2_2</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA3_2</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA4_2</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA5_2</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>1</TH>
+    <TD class=3D"r data">101.625</TD>
+    <TD class=3D"r data">0.77511</TD>
+    <TD class=3D"r data">0.52872</TD>
+    <TD class=3D"r data">115.985</TD>
+    <TD class=3D"r data">129.817</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>2</TH>
+    <TD class=3D"r data" noWrap>-3.500</TD>
+    <TD class=3D"r data">0.70774</TD>
+    <TD class=3D"r data">0.60165</TD>
+    <TD class=3D"r data">267.645</TD>
+    <TD class=3D"r data">109.956</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>3</TH>
+    <TD class=3D"r data">139.378</TD>
+    <TD class=3D"r data">0.75477</TD>
+    <TD class=3D"r data">0.51071</TD>
+    <TD class=3D"r data">122.187</TD>
+    <TD class=3D"r data">111.208</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>4</TH>
+    <TD class=3D"r data">59.656</TD>
+    <TD class=3D"r data">0.87847</TD>
+    <TD class=3D"r data">0.46357</TD>
+    <TD class=3D"r data">180.010</TD>
+    <TD class=3D"r data">158.074</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>5</TH>
+    <TD class=3D"r data">22.618</TD>
+    <TD class=3D"r data">0.84095</TD>
+    <TD class=3D"r data">0.52204</TD>
+    <TD class=3D"r data">222.254</TD>
+    <TD class=3D"r data">116.673</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>6</TH>
+    <TD class=3D"r data">130.950</TD>
+    <TD class=3D"r data">0.92077</TD>
+    <TD class=3D"r data">0.38461</TD>
+    <TD class=3D"r data">129.743</TD>
+    <TD class=3D"r data">171.408</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>7</TH>
+    <TD class=3D"r data">70.080</TD>
+    <TD class=3D"r data">0.82879</TD>
+    <TD class=3D"r data">0.47415</TD>
+    <TD class=3D"r data">203.596</TD>
+    <TD class=3D"r data">128.200</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>8</TH>
+    <TD class=3D"r data">124.465</TD>
+    <TD class=3D"r data">0.78612</TD>
+    <TD class=3D"r data">0.46601</TD>
+    <TD class=3D"r data">127.476</TD>
+    <TD class=3D"r data">191.009</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>9</TH>
+    <TD class=3D"r data">19.101</TD>
+    <TD class=3D"r data">0.85011</TD>
+    <TD class=3D"r data">0.52818</TD>
+    <TD class=3D"r data">202.023</TD>
+    <TD class=3D"r data">176.286</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>10</TH>
+    <TD class=3D"r data">176.608</TD>
+    <TD class=3D"r data">0.70146</TD>
+    <TD class=3D"r data">0.51895</TD>
+    <TD class=3D"r data">82.726</TD>
+    <TD class=3D"r data">101.652</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>11</TH>
+    <TD class=3D"r data" noWrap>-22.633</TD>
+    <TD class=3D"r data">0.81495</TD>
+    <TD class=3D"r data">0.60541</TD>
+    <TD class=3D"r data">209.995</TD>
+    <TD class=3D"r data">89.982</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>12</TH>
+    <TD class=3D"r data">182.453</TD>
+    <TD class=3D"r data">0.78839</TD>
+    <TD class=3D"r data">0.43484</TD>
+    <TD class=3D"r data">77.749</TD>
+    <TD class=3D"r data">140.507</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>13</TH>
+    <TD class=3D"r data">96.697</TD>
+    <TD class=3D"r data">0.79552</TD>
+    <TD class=3D"r data">0.49732</TD>
+    <TD class=3D"r data">158.061</TD>
+    <TD class=3D"r data">127.068</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>14</TH>
+    <TD class=3D"r data" noWrap>-48.038</TD>
+    <TD class=3D"r data">0.98945</TD>
+    <TD class=3D"r data">0.51316</TD>
+    <TD class=3D"r data">188.433</TD>
+    <TD class=3D"r data">125.293</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>15</TH>
+    <TD class=3D"r data">174.353</TD>
+    <TD class=3D"r data">0.69034</TD>
+    <TD class=3D"r data">0.53054</TD>
+    <TD class=3D"r data">84.550</TD>
+    <TD class=3D"r data">127.791</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>16</TH>
+    <TD class=3D"r data" noWrap>-18.346</TD>
+    <TD class=3D"r data">1.02544</TD>
+    <TD class=3D"r data">0.51635</TD>
+    <TD class=3D"r data">101.683</TD>
+    <TD class=3D"r data">217.108</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>17</TH>
+    <TD class=3D"r data">126.289</TD>
+    <TD class=3D"r data">0.79924</TD>
+    <TD class=3D"r data">0.47866</TD>
+    <TD class=3D"r data">122.350</TD>
+    <TD class=3D"r data">140.992</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>18</TH>
+    <TD class=3D"r data">104.895</TD>
+    <TD class=3D"r data">0.70747</TD>
+    <TD class=3D"r data">0.53176</TD>
+    <TD class=3D"r data">173.919</TD>
+    <TD class=3D"r data">146.475</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>19</TH>
+    <TD class=3D"r data">2.461</TD>
+    <TD class=3D"r data">0.86210</TD>
+    <TD class=3D"r data">0.50384</TD>
+    <TD class=3D"r data">231.535</TD>
+    <TD class=3D"r data">156.598</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>20</TH>
+    <TD class=3D"r data">55.161</TD>
+    <TD class=3D"r data">0.86005</TD>
+    <TD class=3D"r data">0.46827</TD>
+    <TD class=3D"r data">203.749</TD>
+    <TD class=3D"r data">127.498</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>21</TH>
+    <TD class=3D"r data">66.440</TD>
+    <TD class=3D"r data">0.88748</TD>
+    <TD class=3D"r data">0.45320</TD>
+    <TD class=3D"r data">168.484</TD>
+    <TD class=3D"r data">142.198</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>22</TH>
+    <TD class=3D"r data">82.728</TD>
+    <TD class=3D"r data">0.78775</TD>
+    <TD class=3D"r data">0.50475</TD>
+    <TD class=3D"r data">185.211</TD>
+    <TD class=3D"r data">148.813</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>23</TH>
+    <TD class=3D"r data">141.267</TD>
+    <TD class=3D"r data">0.76357</TD>
+    <TD class=3D"r data">0.50270</TD>
+    <TD class=3D"r data">111.520</TD>
+    <TD class=3D"r data">118.472</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>24</TH>
+    <TD class=3D"r data">81.091</TD>
+    <TD class=3D"r data">0.78619</TD>
+    <TD class=3D"r data">0.51616</TD>
+    <TD class=3D"r data">188.145</TD>
+    <TD class=3D"r data">92.976</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>25</TH>
+    <TD class=3D"r data">215.529</TD>
+    <TD class=3D"r data">0.69192</TD>
+    <TD class=3D"r data">0.49764</TD>
+    <TD class=3D"r data">44.779</TD>
+    <TD class=3D"r =
+data">149.370</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX5></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Print: Table WORK.BETA_SAMPLE_100_3" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r header" scope=3Dcol>Obs.</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA1_3</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA2_3</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA3_3</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA4_3</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA5_3</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>1</TH>
+    <TD class=3D"r data">65.412</TD>
+    <TD class=3D"r data">0.84056</TD>
+    <TD class=3D"r data">0.47205</TD>
+    <TD class=3D"r data">186.364</TD>
+    <TD class=3D"r data">139.291</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>2</TH>
+    <TD class=3D"r data">11.143</TD>
+    <TD class=3D"r data">1.05575</TD>
+    <TD class=3D"r data">0.47402</TD>
+    <TD class=3D"r data">90.640</TD>
+    <TD class=3D"r data">125.010</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>3</TH>
+    <TD class=3D"r data">113.785</TD>
+    <TD class=3D"r data">0.75248</TD>
+    <TD class=3D"r data">0.54803</TD>
+    <TD class=3D"r data">122.491</TD>
+    <TD class=3D"r data">103.849</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>4</TH>
+    <TD class=3D"r data">65.571</TD>
+    <TD class=3D"r data">0.79839</TD>
+    <TD class=3D"r data">0.53310</TD>
+    <TD class=3D"r data">153.634</TD>
+    <TD class=3D"r data">139.045</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>5</TH>
+    <TD class=3D"r data">158.265</TD>
+    <TD class=3D"r data">0.79454</TD>
+    <TD class=3D"r data">0.47054</TD>
+    <TD class=3D"r data">89.640</TD>
+    <TD class=3D"r data">138.137</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>6</TH>
+    <TD class=3D"r data">21.021</TD>
+    <TD class=3D"r data">0.88953</TD>
+    <TD class=3D"r data">0.50020</TD>
+    <TD class=3D"r data">193.421</TD>
+    <TD class=3D"r data">162.395</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>7</TH>
+    <TD class=3D"r data">90.935</TD>
+    <TD class=3D"r data">0.80288</TD>
+    <TD class=3D"r data">0.52265</TD>
+    <TD class=3D"r data">139.530</TD>
+    <TD class=3D"r data">116.650</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>8</TH>
+    <TD class=3D"r data">4.476</TD>
+    <TD class=3D"r data">0.78414</TD>
+    <TD class=3D"r data">0.57385</TD>
+    <TD class=3D"r data">237.441</TD>
+    <TD class=3D"r data">92.380</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>9</TH>
+    <TD class=3D"r data">34.112</TD>
+    <TD class=3D"r data">0.92995</TD>
+    <TD class=3D"r data">0.42888</TD>
+    <TD class=3D"r data">211.593</TD>
+    <TD class=3D"r data">120.598</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>10</TH>
+    <TD class=3D"r data">53.677</TD>
+    <TD class=3D"r data">0.82639</TD>
+    <TD class=3D"r data">0.53372</TD>
+    <TD class=3D"r data">153.781</TD>
+    <TD class=3D"r data">152.967</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>11</TH>
+    <TD class=3D"r data">115.982</TD>
+    <TD class=3D"r data">0.71124</TD>
+    <TD class=3D"r data">0.53858</TD>
+    <TD class=3D"r data">157.954</TD>
+    <TD class=3D"r data">118.829</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>12</TH>
+    <TD class=3D"r data">80.734</TD>
+    <TD class=3D"r data">0.79340</TD>
+    <TD class=3D"r data">0.53571</TD>
+    <TD class=3D"r data">130.734</TD>
+    <TD class=3D"r data">121.040</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>13</TH>
+    <TD class=3D"r data">68.465</TD>
+    <TD class=3D"r data">0.86706</TD>
+    <TD class=3D"r data">0.47857</TD>
+    <TD class=3D"r data">164.459</TD>
+    <TD class=3D"r data">157.106</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>14</TH>
+    <TD class=3D"r data">81.986</TD>
+    <TD class=3D"r data">0.82673</TD>
+    <TD class=3D"r data">0.46230</TD>
+    <TD class=3D"r data">189.579</TD>
+    <TD class=3D"r data">153.601</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>15</TH>
+    <TD class=3D"r data">78.784</TD>
+    <TD class=3D"r data">0.78181</TD>
+    <TD class=3D"r data">0.53009</TD>
+    <TD class=3D"r data">139.504</TD>
+    <TD class=3D"r data">133.048</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>16</TH>
+    <TD class=3D"r data">184.205</TD>
+    <TD class=3D"r data">0.71842</TD>
+    <TD class=3D"r data">0.47966</TD>
+    <TD class=3D"r data">82.304</TD>
+    <TD class=3D"r data">137.988</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>17</TH>
+    <TD class=3D"r data">90.910</TD>
+    <TD class=3D"r data">0.70795</TD>
+    <TD class=3D"r data">0.55610</TD>
+    <TD class=3D"r data">164.964</TD>
+    <TD class=3D"r data">129.809</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>18</TH>
+    <TD class=3D"r data">41.306</TD>
+    <TD class=3D"r data">0.80483</TD>
+    <TD class=3D"r data">0.55470</TD>
+    <TD class=3D"r data">183.253</TD>
+    <TD class=3D"r data">125.131</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>19</TH>
+    <TD class=3D"r data">56.259</TD>
+    <TD class=3D"r data">0.84814</TD>
+    <TD class=3D"r data">0.49502</TD>
+    <TD class=3D"r data">179.198</TD>
+    <TD class=3D"r data">143.922</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>20</TH>
+    <TD class=3D"r data">92.045</TD>
+    <TD class=3D"r data">0.86381</TD>
+    <TD class=3D"r data">0.46834</TD>
+    <TD class=3D"r data">132.620</TD>
+    <TD class=3D"r data">117.255</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>21</TH>
+    <TD class=3D"r data">129.678</TD>
+    <TD class=3D"r data">0.85616</TD>
+    <TD class=3D"r data">0.42864</TD>
+    <TD class=3D"r data">142.246</TD>
+    <TD class=3D"r data">147.583</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>22</TH>
+    <TD class=3D"r data">24.479</TD>
+    <TD class=3D"r data">0.86056</TD>
+    <TD class=3D"r data">0.50611</TD>
+    <TD class=3D"r data">201.429</TD>
+    <TD class=3D"r data">115.070</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>23</TH>
+    <TD class=3D"r data">103.210</TD>
+    <TD class=3D"r data">0.83180</TD>
+    <TD class=3D"r data">0.47162</TD>
+    <TD class=3D"r data">158.847</TD>
+    <TD class=3D"r data">141.201</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>24</TH>
+    <TD class=3D"r data">89.964</TD>
+    <TD class=3D"r data">0.82848</TD>
+    <TD class=3D"r data">0.47387</TD>
+    <TD class=3D"r data">152.960</TD>
+    <TD class=3D"r data">133.134</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>25</TH>
+    <TD class=3D"r data">213.565</TD>
+    <TD class=3D"r data">0.63466</TD>
+    <TD class=3D"r data">0.52808</TD>
+    <TD class=3D"r data">49.682</TD>
+    <TD class=3D"r =
+data">123.601</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX6></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Print: Table WORK.BETA_SAMPLE_100_4" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"r header" scope=3Dcol>Obs.</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA1_4</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA2_4</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA3_4</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA4_4</TH>
+    <TH class=3D"r header" scope=3Dcol>BETA5_4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>1</TH>
+    <TD class=3D"r data">72.729</TD>
+    <TD class=3D"r data">0.78818</TD>
+    <TD class=3D"r data">0.57502</TD>
+    <TD class=3D"r data">117.791</TD>
+    <TD class=3D"r data">117.538</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>2</TH>
+    <TD class=3D"r data">85.681</TD>
+    <TD class=3D"r data">0.82127</TD>
+    <TD class=3D"r data">0.49548</TD>
+    <TD class=3D"r data">141.914</TD>
+    <TD class=3D"r data">144.403</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>3</TH>
+    <TD class=3D"r data">168.172</TD>
+    <TD class=3D"r data">0.71486</TD>
+    <TD class=3D"r data">0.52147</TD>
+    <TD class=3D"r data">96.220</TD>
+    <TD class=3D"r data">102.858</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>4</TH>
+    <TD class=3D"r data">52.277</TD>
+    <TD class=3D"r data">0.80563</TD>
+    <TD class=3D"r data">0.51219</TD>
+    <TD class=3D"r data">200.257</TD>
+    <TD class=3D"r data">164.873</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>5</TH>
+    <TD class=3D"r data">118.191</TD>
+    <TD class=3D"r data">0.80281</TD>
+    <TD class=3D"r data">0.48272</TD>
+    <TD class=3D"r data">155.000</TD>
+    <TD class=3D"r data">130.542</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>6</TH>
+    <TD class=3D"r data">92.166</TD>
+    <TD class=3D"r data">0.79919</TD>
+    <TD class=3D"r data">0.50631</TD>
+    <TD class=3D"r data">157.905</TD>
+    <TD class=3D"r data">139.290</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>7</TH>
+    <TD class=3D"r data">22.770</TD>
+    <TD class=3D"r data">0.92128</TD>
+    <TD class=3D"r data">0.42174</TD>
+    <TD class=3D"r data">246.919</TD>
+    <TD class=3D"r data">175.753</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>8</TH>
+    <TD class=3D"r data">40.659</TD>
+    <TD class=3D"r data">0.78748</TD>
+    <TD class=3D"r data">0.54101</TD>
+    <TD class=3D"r data">197.463</TD>
+    <TD class=3D"r data">116.752</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>9</TH>
+    <TD class=3D"r data">57.770</TD>
+    <TD class=3D"r data">0.92772</TD>
+    <TD class=3D"r data">0.45915</TD>
+    <TD class=3D"r data">143.921</TD>
+    <TD class=3D"r data">145.292</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>10</TH>
+    <TD class=3D"r data">76.040</TD>
+    <TD class=3D"r data">0.91775</TD>
+    <TD class=3D"r data">0.43194</TD>
+    <TD class=3D"r data">169.361</TD>
+    <TD class=3D"r data">157.066</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>11</TH>
+    <TD class=3D"r data">41.311</TD>
+    <TD class=3D"r data">0.81137</TD>
+    <TD class=3D"r data">0.51752</TD>
+    <TD class=3D"r data">212.130</TD>
+    <TD class=3D"r data">137.489</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>12</TH>
+    <TD class=3D"r data">9.010</TD>
+    <TD class=3D"r data">0.89042</TD>
+    <TD class=3D"r data">0.48042</TD>
+    <TD class=3D"r data">229.544</TD>
+    <TD class=3D"r data">136.543</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>13</TH>
+    <TD class=3D"r data">77.408</TD>
+    <TD class=3D"r data">0.82373</TD>
+    <TD class=3D"r data">0.47287</TD>
+    <TD class=3D"r data">197.722</TD>
+    <TD class=3D"r data">131.637</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>14</TH>
+    <TD class=3D"r data">149.665</TD>
+    <TD class=3D"r data">0.79126</TD>
+    <TD class=3D"r data">0.49158</TD>
+    <TD class=3D"r data">84.863</TD>
+    <TD class=3D"r data">128.158</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>15</TH>
+    <TD class=3D"r data">222.702</TD>
+    <TD class=3D"r data">0.77504</TD>
+    <TD class=3D"r data">0.44995</TD>
+    <TD class=3D"r data">26.616</TD>
+    <TD class=3D"r data">125.892</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>16</TH>
+    <TD class=3D"r data">92.220</TD>
+    <TD class=3D"r data">0.80465</TD>
+    <TD class=3D"r data">0.49776</TD>
+    <TD class=3D"r data">161.995</TD>
+    <TD class=3D"r data">137.928</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>17</TH>
+    <TD class=3D"r data">82.401</TD>
+    <TD class=3D"r data">0.78178</TD>
+    <TD class=3D"r data">0.53990</TD>
+    <TD class=3D"r data">158.964</TD>
+    <TD class=3D"r data">113.149</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>18</TH>
+    <TD class=3D"r data" noWrap>-2.740</TD>
+    <TD class=3D"r data">0.84949</TD>
+    <TD class=3D"r data">0.53866</TD>
+    <TD class=3D"r data">210.078</TD>
+    <TD class=3D"r data">118.907</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>19</TH>
+    <TD class=3D"r data">198.145</TD>
+    <TD class=3D"r data">0.81548</TD>
+    <TD class=3D"r data">0.44216</TD>
+    <TD class=3D"r data">49.805</TD>
+    <TD class=3D"r data">106.072</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>20</TH>
+    <TD class=3D"r data">116.131</TD>
+    <TD class=3D"r data">0.76503</TD>
+    <TD class=3D"r data">0.50599</TD>
+    <TD class=3D"r data">139.435</TD>
+    <TD class=3D"r data">150.835</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>21</TH>
+    <TD class=3D"r data">92.140</TD>
+    <TD class=3D"r data">0.83236</TD>
+    <TD class=3D"r data">0.48512</TD>
+    <TD class=3D"r data">163.857</TD>
+    <TD class=3D"r data">143.024</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>22</TH>
+    <TD class=3D"r data">150.601</TD>
+    <TD class=3D"r data">0.70159</TD>
+    <TD class=3D"r data">0.52148</TD>
+    <TD class=3D"r data">111.023</TD>
+    <TD class=3D"r data">145.653</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>23</TH>
+    <TD class=3D"r data">124.234</TD>
+    <TD class=3D"r data">0.86098</TD>
+    <TD class=3D"r data">0.46276</TD>
+    <TD class=3D"r data">78.782</TD>
+    <TD class=3D"r data">157.441</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>24</TH>
+    <TD class=3D"r data">204.284</TD>
+    <TD class=3D"r data">0.81091</TD>
+    <TD class=3D"r data">0.40861</TD>
+    <TD class=3D"r data">65.045</TD>
+    <TD class=3D"r data">144.515</TD></TR>
+  <TR>
+    <TH class=3D"r rowheader" scope=3Drow>25</TH>
+    <TD class=3D"r data">156.248</TD>
+    <TD class=3D"r data">0.84593</TD>
+    <TD class=3D"r data">0.44596</TD>
+    <TD class=3D"r data">93.458</TD>
+    <TD class=3D"r =
+data">138.662</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX7></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA1</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">30</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">30</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">106.498137</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">3194.9441</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">14.0555657</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">197.558928</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data" noWrap>-0.3015265</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">2.9896164</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">345984.803</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">5729.20891</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">13.1979452</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">2.56618347</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX8></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">106.4981</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">14.05557</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">107.1153</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">197.55893</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">78.11210</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">5.61092</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX9></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">41.50059</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">15</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">232.5</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX10></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">143.8426</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">143.8426</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">127.7011</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">124.5131</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">110.1784</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">107.1153</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">104.5675</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">91.6946</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">79.0134</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">65.7305</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">65.7305</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX11></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">65.7305</TD>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">114.673</TD>
+    <TD class=3D"r data">12</TD></TR>
+  <TR>
+    <TD class=3D"r data">79.0134</TD>
+    <TD class=3D"r data">10</TD>
+    <TD class=3D"r data">123.567</TD>
+    <TD class=3D"r data">25</TD></TR>
+  <TR>
+    <TD class=3D"r data">91.2159</TD>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">125.459</TD>
+    <TD class=3D"r data">21</TD></TR>
+  <TR>
+    <TD class=3D"r data">92.1733</TD>
+    <TD class=3D"r data">20</TD>
+    <TD class=3D"r data">127.701</TD>
+    <TD class=3D"r data">1</TD></TR>
+  <TR>
+    <TD class=3D"r data">94.3023</TD>
+    <TD class=3D"r data">27</TD>
+    <TD class=3D"r data">143.843</TD>
+    <TD class=3D"r data">11</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX12></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA2</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">30</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">30</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.79732428</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">23.9197284</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.01332307</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.0001775</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data">0.81296833</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">3.23005274</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">19.0769279</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">0.00514762</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">1.67097306</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">0.00243245</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX13></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.797324</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.01332</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">0.796080</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.0001775</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">0.07092</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">0.00770</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX14></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">327.7866</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">15</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">232.5</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX15></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">0.840483</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">0.840483</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">0.816892</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">0.813195</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">0.801753</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">0.796080</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">0.794051</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">0.781067</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">0.774292</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">0.769562</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">0.769562</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX16></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.769562</TD>
+    <TD class=3D"r data">25</TD>
+    <TD class=3D"r data">0.806393</TD>
+    <TD class=3D"r data">23</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.774292</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">0.810156</TD>
+    <TD class=3D"r data">6</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.776848</TD>
+    <TD class=3D"r data">21</TD>
+    <TD class=3D"r data">0.816234</TD>
+    <TD class=3D"r data">13</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.785287</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.816892</TD>
+    <TD class=3D"r data">4</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.786340</TD>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">0.840483</TD>
+    <TD class=3D"r data">27</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX17></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA3</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">30</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">30</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.49549111</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">14.8647332</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.00893072</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.00007976</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data">0.42664988</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">2.88514614</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">7.36765607</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">0.00231297</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">1.80239663</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">0.00163052</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX18></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.495491</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.00893</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">0.495680</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.0000798</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">0.04750</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">0.00783</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX19></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">303.8857</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">15</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">232.5</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX20></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">0.519125</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">0.519125</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">0.517776</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">0.503477</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">0.498810</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">0.495680</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">0.490983</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">0.487053</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">0.483322</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">0.471623</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">0.471623</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX21></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.471623</TD>
+    <TD class=3D"r data">27</TD>
+    <TD class=3D"r data">0.501218</TD>
+    <TD class=3D"r data">25</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.483322</TD>
+    <TD class=3D"r data">30</TD>
+    <TD class=3D"r data">0.501839</TD>
+    <TD class=3D"r data">16</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.486159</TD>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">0.505115</TD>
+    <TD class=3D"r data">20</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.487948</TD>
+    <TD class=3D"r data">4</TD>
+    <TD class=3D"r data">0.517776</TD>
+    <TD class=3D"r data">10</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.488904</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">0.519125</TD>
+    <TD class=3D"r data">6</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX22></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA4</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">30</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">30</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">140.2023</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">4206.06899</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">11.5071187</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">132.413781</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data" noWrap>-0.0128915</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">0.57627416</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">593540.545</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">3839.99964</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">8.20751065</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">2.10090283</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX23></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">140.2023</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">11.50712</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">139.7931</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">132.41378</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">53.21165</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">13.38504</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX24></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">66.73431</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">15</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">232.5</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX25></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">165.868</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">165.868</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">160.008</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">155.938</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">148.018</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">139.793</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">134.633</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">125.117</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">121.125</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">112.656</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">112.656</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX26></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">112.656</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">149.970</TD>
+    <TD class=3D"r data">18</TD></TR>
+  <TR>
+    <TD class=3D"r data">121.125</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">152.486</TD>
+    <TD class=3D"r data">20</TD></TR>
+  <TR>
+    <TD class=3D"r data">122.824</TD>
+    <TD class=3D"r data">25</TD>
+    <TD class=3D"r data">159.391</TD>
+    <TD class=3D"r data">4</TD></TR>
+  <TR>
+    <TD class=3D"r data">127.409</TD>
+    <TD class=3D"r data">21</TD>
+    <TD class=3D"r data">160.008</TD>
+    <TD class=3D"r data">10</TD></TR>
+  <TR>
+    <TD class=3D"r data">131.096</TD>
+    <TD class=3D"r data">13</TD>
+    <TD class=3D"r data">165.868</TD>
+    <TD class=3D"r data">6</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX27></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA5</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">30</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">30</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">133.050195</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">3991.50584</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">4.00398013</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">16.0318569</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data" noWrap>-0.7551608</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">7.48654467</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">531535.554</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">464.923849</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">3.00937562</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">0.73102341</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX28></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">133.0502</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">4.00398</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">133.2345</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">16.03186</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">26.41882</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">2.24770</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX29></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">182.0054</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">15</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">232.5</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX30></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">144.977</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">144.977</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">137.362</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">136.393</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">134.273</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">133.235</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">132.025</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">129.896</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">129.191</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">118.558</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">118.558</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX31></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">118.558</TD>
+    <TD class=3D"r data">6</TD>
+    <TD class=3D"r data">135.928</TD>
+    <TD class=3D"r data">25</TD></TR>
+  <TR>
+    <TD class=3D"r data">129.191</TD>
+    <TD class=3D"r data">11</TD>
+    <TD class=3D"r data">135.948</TD>
+    <TD class=3D"r data">13</TD></TR>
+  <TR>
+    <TD class=3D"r data">129.577</TD>
+    <TD class=3D"r data">3</TD>
+    <TD class=3D"r data">136.838</TD>
+    <TD class=3D"r data">27</TD></TR>
+  <TR>
+    <TD class=3D"r data">130.215</TD>
+    <TD class=3D"r data">10</TD>
+    <TD class=3D"r data">137.362</TD>
+    <TD class=3D"r data">23</TD></TR>
+  <TR>
+    <TD class=3D"r data">130.269</TD>
+    <TD class=3D"r data">21</TD>
+    <TD class=3D"r data">144.977</TD>
+    <TD class=3D"r =
+data">4</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=3Dbranch>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX32></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA1</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">100</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">89.909391</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">8990.9391</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">61.0773481</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">3730.44245</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data">0.1876874</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data" noWrap>-0.1707262</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">1177683.66</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">369313.803</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">67.9321119</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">6.10773481</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX33></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">89.90939</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">61.07735</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">83.64845</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">3730</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">281.32112</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">74.92343</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX34></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">14.72058</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">44</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">2451</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX35></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">225.44331</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">224.07284</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">206.13866</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">177.72867</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">127.98340</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">83.64845</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">53.05997</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">15.12204</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data" noWrap>-3.12006</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data" noWrap>-51.95775</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r data" =
+noWrap>-55.87781</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX36></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data" noWrap>-55.87781</TD>
+    <TD class=3D"r data">1</TD>
+    <TD class=3D"r data">207.993</TD>
+    <TD class=3D"r data">16</TD></TR>
+  <TR>
+    <TD class=3D"r data" noWrap>-48.03769</TD>
+    <TD class=3D"r data">39</TD>
+    <TD class=3D"r data">213.565</TD>
+    <TD class=3D"r data">75</TD></TR>
+  <TR>
+    <TD class=3D"r data" noWrap>-22.63272</TD>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">215.529</TD>
+    <TD class=3D"r data">50</TD></TR>
+  <TR>
+    <TD class=3D"r data" noWrap>-18.34621</TD>
+    <TD class=3D"r data">41</TD>
+    <TD class=3D"r data">222.702</TD>
+    <TD class=3D"r data">90</TD></TR>
+  <TR>
+    <TD class=3D"r data" noWrap>-3.50002</TD>
+    <TD class=3D"r data">27</TD>
+    <TD class=3D"r data">225.443</TD>
+    <TD class=3D"r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX37></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA2</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">100</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.81392517</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">81.3925171</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.07744842</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.00599826</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data">0.29749113</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">0.76497817</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">66.8412459</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">0.59382752</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">9.51542269</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">0.00774484</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX38></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.813925</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.07745</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">0.805230</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.00600</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">0.43765</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">0.08825</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX39></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">105.0925</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">50</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">2525</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX40></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">1.055746</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">1.040594</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">0.932775</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">0.916400</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">0.860302</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">0.805230</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">0.772055</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">0.707847</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">0.691642</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">0.626378</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">0.618097</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX41></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.618097</TD>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">0.935598</TD>
+    <TD class=3D"r data">25</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.634660</TD>
+    <TD class=3D"r data">75</TD>
+    <TD class=3D"r data">0.953400</TD>
+    <TD class=3D"r data">23</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.673606</TD>
+    <TD class=3D"r data">18</TD>
+    <TD class=3D"r data">0.989448</TD>
+    <TD class=3D"r data">39</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.690337</TD>
+    <TD class=3D"r data">40</TD>
+    <TD class=3D"r data">1.025443</TD>
+    <TD class=3D"r data">41</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.691359</TD>
+    <TD class=3D"r data">9</TD>
+    <TD class=3D"r data">1.055746</TD>
+    <TD class=3D"r data">52</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX42></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA3</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">100</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.49899015</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">49.8990148</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.04266837</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.00182059</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data" noWrap>-0.1913091</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">0.09727354</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">25.0793551</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">0.18023841</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">8.55094474</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">0.00426684</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX43></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">0.498990</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">0.04267</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">0.503272</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">0.00182</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">0.22080</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">0.05674</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX44></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">116.9461</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">50</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">2525</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX45></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">0.605411</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">0.603530</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">0.566394</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">0.547690</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">0.528448</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">0.503272</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">0.471709</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">0.444060</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">0.425189</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">0.394554</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">0.384611</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX46></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">0.384611</TD>
+    <TD class=3D"r data">31</TD>
+    <TD class=3D"r data">0.569375</TD>
+    <TD class=3D"r data">1</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.404498</TD>
+    <TD class=3D"r data">25</TD>
+    <TD class=3D"r data">0.573850</TD>
+    <TD class=3D"r data">58</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.406947</TD>
+    <TD class=3D"r data">23</TD>
+    <TD class=3D"r data">0.575019</TD>
+    <TD class=3D"r data">76</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.408612</TD>
+    <TD class=3D"r data">99</TD>
+    <TD class=3D"r data">0.601649</TD>
+    <TD class=3D"r data">27</TD></TR>
+  <TR>
+    <TD class=3D"r data">0.421743</TD>
+    <TD class=3D"r data">82</TD>
+    <TD class=3D"r data">0.605411</TD>
+    <TD class=3D"r data">36</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX47></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA4</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">100</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">149.526399</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">14952.6399</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">50.062633</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">2506.26723</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data" noWrap>-0.2297756</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data" noWrap>-0.3465036</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">2483934.86</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">248120.456</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">33.480799</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">5.0062633</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX48></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">149.5264</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">50.06263</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">156.0747</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">2506</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">241.02936</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">70.35769</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX49></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">29.86787</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">50</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">2525</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX50></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">267.6454</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">257.2820</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">229.1603</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">210.0362</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">187.2457</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">156.0747</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">116.8880</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">82.5151</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">57.4250</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">34.6725</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">26.6161</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX51></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">26.6161</TD>
+    <TD class=3D"r data">90</TD>
+    <TD class=3D"r data">229.544</TD>
+    <TD class=3D"r data">87</TD></TR>
+  <TR>
+    <TD class=3D"r data">42.7290</TD>
+    <TD class=3D"r data">5</TD>
+    <TD class=3D"r data">231.535</TD>
+    <TD class=3D"r data">44</TD></TR>
+  <TR>
+    <TD class=3D"r data">44.7788</TD>
+    <TD class=3D"r data">50</TD>
+    <TD class=3D"r data">237.441</TD>
+    <TD class=3D"r data">58</TD></TR>
+  <TR>
+    <TD class=3D"r data">49.6817</TD>
+    <TD class=3D"r data">75</TD>
+    <TD class=3D"r data">246.919</TD>
+    <TD class=3D"r data">82</TD></TR>
+  <TR>
+    <TD class=3D"r data">49.8046</TD>
+    <TD class=3D"r data">94</TD>
+    <TD class=3D"r data">267.645</TD>
+    <TD class=3D"r data">27</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style=3D"PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3D3>
+<A name=3DIDX52></A>
+<TABLE class=3Dsystitleandfootercontainer cellSpacing=3D1 =
+cellPadding=3D1 rules=3Dnone=20
+width=3D"100%" summary=3D"Page Layout" border=3D0 frame=3Dvoid>
+  <TBODY>
+  <TR>
+    <TD class=3D"l systemtitle">Le Syst=E8me =
+SAS</TD></TR></TBODY></TABLE><BR>
+<DIV class=3D"l proctitle">Proc=E9dure UNIVARIATE</DIV>
+<DIV class=3D"l proctitle">Variable : BETA5</DIV>
+<P>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Moments" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 =
+scope=3Dcolgroup>Moments</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>N</TH>
+    <TD class=3D"r data">100</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des poids</TH>
+    <TD class=3D"r data">100</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">134.131724</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des observations</TH>
+    <TD class=3D"r data">13413.1724</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">21.32399</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">454.712551</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Skewness</TH>
+    <TD class=3D"r data">0.64927806</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Kurtosis</TH>
+    <TD class=3D"r data">1.66711765</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s non =
+corrig=E9e</TH>
+    <TD class=3D"r data">1844148.49</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Somme des carr=E9s =
+corrig=E9e</TH>
+    <TD class=3D"r data">45016.5426</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Coeff Variation</TH>
+    <TD class=3D"r data">15.8977976</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Std Error Mean</TH>
+    <TD class=3D"r =
+data">2.132399</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX53></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Mesures de base de tendance centrale et =
+de variabilit=E9"=20
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Mesures =
+statistiques de=20
+      base</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Emplacement</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Variabilit=E9</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Moyenne</TH>
+    <TD class=3D"r data">134.1317</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart-type</TH>
+    <TD class=3D"r data">21.32399</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>M=E9diane</TH>
+    <TD class=3D"r data">132.3429</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Variance</TH>
+    <TD class=3D"r data">454.71255</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Mode</TH>
+    <TD class=3D"r data">.</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Intervalle</TH>
+    <TD class=3D"r data">127.12544</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>&nbsp;</TH>
+    <TD class=3D"r data">&nbsp;</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Ecart interquartile</TH>
+    <TD class=3D"r =
+data">25.31291</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX54></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Tests de tendance centrale" =
+frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D5=20
+      =
+scope=3Dcolgroup>Tests&nbsp;de&nbsp;tendance&nbsp;centrale&nbsp;:&nbsp;Mu=
+0=3D0</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Test</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>Statistique</TH>
+    <TH class=3D"c b header" colSpan=3D2 =
+scope=3Dcolgroup>P-value</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>t de Student</TH>
+    <TH class=3D"l rowheader" scope=3Drow>t</TH>
+    <TD class=3D"r data">62.90179</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt; |t|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Signe</TH>
+    <TH class=3D"l rowheader" scope=3Drow>M</TH>
+    <TD class=3D"r data">50</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |M|</TH>
+    <TD class=3D"r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>Rang sign=E9</TH>
+    <TH class=3D"l rowheader" scope=3Drow>S</TH>
+    <TD class=3D"r data">2525</TD>
+    <TH class=3D"l rowheader" scope=3Drow>Pr &gt;=3D |S|</TH>
+    <TD class=3D"r =
+data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX55></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Quantiles" frame=3Dbox>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2=20
+      scope=3Dcolgroup>Quantiles&nbsp;(D=E9finition&nbsp;5)</TH></TR>
+  <TR>
+    <TH class=3D"l b header" scope=3Dcol>Niveau</TH>
+    <TH class=3D"r b header" scope=3Dcol>Quantile</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>100Max 100%</TH>
+    <TD class=3D"r data">217.1079</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>99%</TH>
+    <TD class=3D"r data">204.0583</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>95%</TH>
+    <TD class=3D"r data">169.5116</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>90%</TH>
+    <TD class=3D"r data">158.3092</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>75% Q3</TH>
+    <TD class=3D"r data">146.0641</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>50% M=E9diane</TH>
+    <TD class=3D"r data">132.3429</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>25% Q1</TH>
+    <TD class=3D"r data">120.7512</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>10%</TH>
+    <TD class=3D"r data">107.4221</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>5%</TH>
+    <TD class=3D"r data">102.2548</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>1%</TH>
+    <TD class=3D"r data">91.1811</TD></TR>
+  <TR>
+    <TH class=3D"l rowheader" scope=3Drow>0% Min</TH>
+    <TD class=3D"r =
+data">89.9824</TD></TR></TBODY></TABLE></DIV></DIV><BR><A=20
+name=3DIDX56></A>
+<DIV>
+<DIV align=3Dleft>
+<TABLE class=3Dtable borderColor=3D#c1c1c1 cellSpacing=3D0 =
+cellPadding=3D5 rules=3Dall=20
+summary=3D"Procedure Univariate: Observations extr=EAmes" frame=3Dbox>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D4 scope=3Dcolgroup>Observations=20
+extr=EAmes</TH></TR>
+  <TR>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+bas</TH>
+    <TH class=3D"c b header" colSpan=3D2 scope=3Dcolgroup>Le plus =
+haut</TH></TR>
+  <TR>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH>
+    <TH class=3D"r b header" scope=3Dcol>Valeur</TH>
+    <TH class=3D"r b header" scope=3Dcol>Obs</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD class=3D"r data">89.9824</TD>
+    <TD class=3D"r data">36</TD>
+    <TD class=3D"r data">171.408</TD>
+    <TD class=3D"r data">31</TD></TR>
+  <TR>
+    <TD class=3D"r data">92.3797</TD>
+    <TD class=3D"r data">58</TD>
+    <TD class=3D"r data">175.753</TD>
+    <TD class=3D"r data">82</TD></TR>
+  <TR>
+    <TD class=3D"r data">92.9758</TD>
+    <TD class=3D"r data">49</TD>
+    <TD class=3D"r data">176.286</TD>
+    <TD class=3D"r data">34</TD></TR>
+  <TR>
+    <TD class=3D"r data">93.0937</TD>
+    <TD class=3D"r data">12</TD>
+    <TD class=3D"r data">191.009</TD>
+    <TD class=3D"r data">33</TD></TR>
+  <TR>
+    <TD class=3D"r data">101.6519</TD>
+    <TD class=3D"r data">35</TD>
+    <TD class=3D"r data">217.108</TD>
+    <TD=20
+class=3D"r =
+data">41</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV></BODY></HTML>
