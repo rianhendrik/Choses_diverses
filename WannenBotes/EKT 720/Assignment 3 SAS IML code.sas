@@ -137,7 +137,7 @@ close beta_table;
 
 *3d: Taking a single bootstrap sample from n, and running a regression (random seed set as 0);
 
-one_sample = sample(obs, 30);
+one_sample = sample(obs, n);
 y = y1[one_sample,];
 x = x1[one_sample,];
 
