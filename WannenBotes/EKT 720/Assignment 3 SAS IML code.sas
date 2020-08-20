@@ -137,7 +137,6 @@ close beta_table;
 
 *3d: Taking a single bootstrap sample from n, and running a regression (random seed set as 0);
 
-call randseed(123, reinit);
 one_sample = sample(obs, 30);
 y = y1[one_sample,];
 x = x1[one_sample,];
@@ -174,19 +173,82 @@ do i = 1 to samples;
 	beta5[i] = b5 ;
 end;
 
+beta1_1 = beta1[,1:25];
+beta2_1 = beta2[,1:25];
+beta3_1 = beta3[,1:25];
+beta4_1 = beta4[,1:25];
+beta5_1 = beta5[,1:25];
+
+beta1_2 = beta1[,26:50];
+beta2_2 = beta2[,26:50];
+beta3_2 = beta3[,26:50];
+beta4_2 = beta4[,26:50];
+beta5_2 = beta5[,26:50];
+
+beta1_3 = beta1[,51:75];
+beta2_3 = beta2[,51:75];
+beta3_3 = beta3[,51:75];
+beta4_3 = beta4[,51:75];
+beta5_3 = beta5[,51:75];
+
+beta1_4 = beta1[,76:100];
+beta2_4 = beta2[,76:100];
+beta3_4 = beta3[,76:100];
+beta4_4 = beta4[,76:100];
+beta5_4 = beta5[,76:100];
+
+create beta_sample_100_1 var {beta1_1 beta2_1 beta3_1 beta4_1 beta5_1};
+append;
+close beta_sample_100_1;
+
+create beta_sample_100_2 var {beta1_2 beta2_2 beta3_2 beta4_2 beta5_2};
+append;
+close beta_sample_100_2;
+
+create beta_sample_100_3 var {beta1_3 beta2_3 beta3_3 beta4_3 beta5_3};
+append;
+close beta_sample_100_3;
+
+create beta_sample_100_4 var {beta1_4 beta2_4 beta3_4 beta4_4 beta5_4};
+append;
+close beta_sample_100_4;
+
+
+
 create beta_sample_100 var {beta1 beta2 beta3 beta4 beta5} ;
 append;
 close beta_sample_100;
 
 
+ 
+
 proc print data = beta_table; *Obtaining the betas table to be provided as results from 'leave one out' regressions.;
 run;
 
-proc print data = beta_sample_100; *Obtaining the betas table to be proveded as results from the regressions run on 100 bootstrap samples;
+proc print data = beta_sample_100_1; *Obtaining the betas table to be proveded as results from the regressions run on the first 25 of the 100 bootstrap samples;
+run;
+
+proc print data = beta_sample_100_2;
+run;
+
+proc print data = beta_sample_100_3;
+run;
+
+proc print data = beta_sample_100_4;
+run;
+
+*Further exploratory analysis performed in proc univariate on betas to substantiate comments on these observed betas;
+
+proc univariate data = beta_table;
+run;
+
+proc univariate data = beta_sample_100;
 run;
 
 
-*Further exploratory analysis performed on betas to substantiate comments on these observed betas;
+
+
+
 
 /*proc univariate data = beta_table normal;*/
 /*histogram;*/
