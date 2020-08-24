@@ -13,62 +13,49 @@ read all into points;
 /*Visualising the data*/
 run Scatter(points[, 1], points[, 2]);
 
+n = nrow(points);
+k  = 3;
 inits = {10 30, 20 40, 40 40};
+new_centroids = inits;
+conv = 1;
+d = ncol(points); /*where d denotes dimensions*/
 
+/*start clusterer;*/
+
+repeat = 0;
+do while (conv = 1);
+repeat = repeat + 1;
 inits = new_centroids;
-print inits;
-/*ASSIGNMENT:*/
-groups = J(n, 1, .);
-print k;
-do i = 1 to n;
-	dist = J(k, 1, .);
-	do j = 1 to k;
-		dist[j] = ((points[i, 1] - inits[j, 1])**2 + (points[i, 2] - inits[j, 2])**2)**0.5;
-	end;	
-	mini = min(dist);
-	groups[i] = loc(dist = mini);
+	/*ASSIGNMENT:*/
+	groups = J(n, 1, .);
+	do i = 1 to n;
+		dist = J(k, 1, .);
+			do j = 1 to k;
+				dist[j] = ((points[i, 1] - inits[j, 1])**2 + (points[i, 2] - inits[j, 2])**2)**0.5;
+			end;	
+		mini = min(dist);
+		groups[i] = loc(dist = mini);
+	end;
+
+	new_centroids = J(k, d, .);
+	do i = 1 to k;
+		cluster_i = loc(groups = i);
+		points_i = points[cluster_i,];
+		new_centroid_i = points_i[+,]/nrow(points_i);
+		new_centroids[i,] = new_centroid_i;
+	end;
+
+	if new_centroids = inits then conv = 0; 
+							 else conv = 1;
 end;
+/*end clusterer;*/
 
-inits = new_cluster;
+print new_centroids;
 
-/*Grouping and plotting to see first iteration results*/
+
+/*Displaying final result*/
 grouped = points || groups;
 run Scatter(grouped[, 1], grouped[, 2]) group = grouped[, 3];
+print repeat;
 
-new_centroids = J(k, 2, .);
-do i = 1 to k;
-	cluster_i = loc(groups = i);
-	points_i = points[cluster_i,];
-	new_centroid_i = points_i[+,]/nrow(points_i);
-	new_centroids[i,] = new_centroid_i;
-end;
-
-
-/*somx = J(1, k, .);*/
-/*do i = 1 to k;*/
-/*	if grouped[, 3] = i then somx[, i] = sum(grouped[,1]);*/
-/*end;*/
-/**/
-/*print som;*/
-
-
-/*RECALCULATE CENTROIDS*/
-/*do i = 3 to k+2;*/
-/*	g = points[,3 = i];*/
-
-
-/*INITIATION*/
-/*Selecting the first three centroids*/
-
-n = nrow(points);
-k = 3;
-/*inits = J(k, 2, .);*/
-/*call randseed(1);*/
-/*do i = 1 to k;*/
-/*	init_x1 = rand("Uniform")*max(points[, 1]);*/
-/*	init_x2 = rand("Uniform")*max(points[, 2]);*/
-/*	inits[i, 1] = init_x1;*/
-/*	inits[i, 2] = init_x2;*/
-/*end;*/
-
-/*print inits;*/
+quit;
