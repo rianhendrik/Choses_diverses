@@ -220,7 +220,7 @@ read all into points;
 
 
 /*/*/*/*NOTE*/*/*/*/
-/*If you want to have the algorithm select n random points from the data, set the last argument into the subroutine as 0.*/
+/*If you want to have the algorithm select n random points from the data as initial centroids, set the second last argument into the subroutine as 0.*/
 /*Else insert a matrix of n points that you would like to specify as your starting points.*/
 /*If you want to see the R2 values for each successive iteration of the K-means algortihm, set 'evaluation' to 'true'.*/
 
