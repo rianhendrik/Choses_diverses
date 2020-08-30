@@ -226,7 +226,7 @@ read all into points;
 
 /*QUESTION 1a*/;
 initial_points = {10 30, 20 40, 40 40};
-call Kmeans(points, 9, initial_points, 'true');
+call Kmeans(points, 3, initial_points, 'true');
 
 /*QUESTION 1b*/
 call Kmeans(points, 3, 0, 'true');
