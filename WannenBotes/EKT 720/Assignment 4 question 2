@@ -1,0 +1,82 @@
+FILENAME REFFILE '/home/u48737797/EKT 720/xy_2017.xlsx';
+PROC IMPORT DATAFILE=REFFILE
+	DBMS=XLSX
+	OUT=ass4;
+	GETNAMES=YES;
+RUN;
+
+proc plot data=ass4;
+plot y*x;
+run;
+
+proc iml;
+use ass4;
+read all into f;
+x1 = f[,1];
+y1 = f[,2];
+m= 7;  			*nr of nearest neighbours;
+n= nrow(x1);
+s= m/n;   		*Span of the kernel smoother;
+df_sse = n-2;
+
+*Defining the matrices we need;
+yhat = J(n,1,1);
+lowerBound =J(n,1,1);
+upperBound =J(n,1,1);
+test = J(n,1,1);
+w=J(n,1,1);
+
+do i = 1 to n;
+*Calculating the tricube weight function;
+	chosenx = x1[i,]; 			*x0;
+	center = x1 - chosenx;   	*x-x0;
+	newMatrix = abs(center) || center || f;
+	call sort(newMatrix,{1});
+	
+	h=(max(newMatrix[1:m,2])-min(newMatrix[1:m,2]))/2;  *the halfwidth of the window;
+	test = abs(center)/h;
+	if test<1 then w=(1-test##3)##3;
+	sel = loc(w>0); *Selecting the locations of the weight funciton that isn't 0;
+	if ncol(sel)>m then sel=sel[,1:m];
+	
+*Calculating the weighted average of the y-values;	
+	x = J(ncol(sel),1,1) || newMatrix[sel,2];
+	y = newMatrix[sel,4];
+	matrixW = diag(w[sel,]);
+	beta = inv(x`*matrixW*x)*x`*matrixW*y; *formula for yhat in matrix multiplication format;
+	yhat[i] = beta[1,1];
+	
+	residual= y-x*beta;
+	sse=residual`*residual;
+	mse = sse/df_sse;
+	eststd = sqrt(vecdiag(mse*inv(x`*matrixW*x)));
+*Calculating the prediction intervals;
+	lowerBound[i] = beta[1,1] - tinv(0.975,df_sse)*eststd[1,];
+	upperBound[i] = beta[1,1] + tinv(0.975,df_sse)*eststd[1,];	
+end;
+print beta yhat lowerBound upperBound;
+
+*print beta residual sse mse eststd;
+*run scatter(x1,yhat);
+*print lowerBound upperBound;
+*print yhat;
+
+*Filling the matrices defined beforehand;
+create yNEW var {"yhat" "lowerBound" "upperBound" "x1"};
+append ;
+show contents;
+close yNEW;
+
+quit;
+
+proc print data=yNew;
+run;
+
+goptions reset=all;
+axis1 label=none ;
+axis2 label=none;
+legend1 label=none position=center;
+proc gplot data = yNEW;
+symbol i=spline v=dot h=1;
+plot (yhat lowerBound upperBound)*x1 / overlay legend=legend1 haxis=axis2 vaxis=axis1;
+run;
