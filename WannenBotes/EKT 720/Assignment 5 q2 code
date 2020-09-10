@@ -1,0 +1,108 @@
+FILENAME REFFILE '/home/u48737797/EKT 720/yx.xlsx';
+PROC IMPORT DATAFILE=REFFILE
+	DBMS=XLSX
+	OUT=assign5;
+	GETNAMES=YES;
+RUN;
+
+
+proc print data= assign5;run;
+
+*Question 2b;
+
+symbol interpol=none v=dot h=1;
+proc gplot data=assign5;
+plot X1*x2 =Group ;
+run;
+quit;
+
+
+proc iml;
+use assign5;
+read all into xy;
+
+start knn;
+y = xy[,1];
+x = xy[,2:3];
+dist = distance(x)[1:ntrain,];
+*print dist;
+
+res=J(n,1,.) ;
+do i =1 to n;  *Calculating the max;
+ dist_val = dist[,i] || y[1:ntrain,];
+ call sort(dist_val,{1});
+ dist_val = dist_val[1:k,];
+ cnt= (dist_val[,2]=1)[+] || (dist_val[,2]=2)[+] || (dist_val[,2]=3)[+] ;
+ class = cnt[<:>];
+ res[i] = class;
+end;
+*print xy res;
+mod = xy || res ;
+*print mod;
+
+pac_train = ((mod[,1]=mod[,5])[1:ntrain,])[+] / ntrain ;   *Prediction accuracy of the training data;
+pac_test = ((mod[,1]=mod[,5])[ntrain+1:n])[+]/ ntest ;     *Prediction accuracy of the test data
+print k n ntrain ntest pac_train pac_test ;
+
+x1=mod[,2];
+x2=mod[,3];
+yh = mod[,1];
+yhat = J(nrow(mod),1,1);
+yhat = (mod[1:ntrain,5]+10) // (mod[(ntrain+1):nrow(mod),5]+100);
+*print yhat;
+finish knn;
+
+*Parameter definitions;
+n = nrow(xy);
+k=100;
+kfold=5; 
+prop= (kfold-1)/kfold ;
+ntrain = round(n*prop);
+ntest = n-ntrain;
+
+*Getting out test and training data;
+randomxy = ranuni(J(n,1,0)) || xy ;
+call sort(randomxy,{1}) ;
+mixedxy=  randomxy[,2:ncol(randomxy)] ;
+
+*Performing the k-fold cross validation;
+do m=1 to kfold;
+nst = (m-1)*ntest +1 ;
+nen = m*ntest ;
+nsel = (nst:nen) ;
+nselid = J(1,n,0) ;
+nselid[nsel]=1 ;
+
+seltesttr = loc(nselid=1) ;
+seltraintr = loc(nselid=0) ;
+seltest = seltesttr`;
+seltrain = seltraintr`;
+*print seltest seltrain;
+
+xy = (mixedxy[seltrain,] || J(ntrain,1,1) ) //  
+     (mixedxy[seltest,]  || J(ntest,1,2) );
+call knn;
+res_kfold = res_kfold //
+     (m || k ||pac_train || pac_test) ;
+end ;
+
+nm={"fold" "k" "pac_train" "pac_test"} ;
+print res_kfold[colname=nm] ;
+
+ares_kfold = res_kfold[,2:ncol(res_kfold)] ;
+nm1={"k" "pac_train" "pac_test"} ;
+print ares_kfold[colname=nm1] ;
+
+
+create plot1 var {res yhat x1 x2 yh}; 
+append;                
+close plot1;
+
+quit;
+
+proc gplot data = plot1;
+plot x1*x2=yh;
+plot x1*x2=res;
+plot x1*x2=yhat;
+run;
+quit;
