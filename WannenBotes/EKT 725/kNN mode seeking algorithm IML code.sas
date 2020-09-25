@@ -7,9 +7,20 @@ read all into x;
 use sasuser.mode2;
 read all into x2;
 
-/*Note that you can specify different values of k for the kNN density estimates, and for the actual mode seeking algorithm.*/
-/*Set plot equal to 0 for no plots, and 1 for plots;*/
-/*Set prints equal to 0 for no cluster results prints, and 1 for result prints*/
+******************************************************************************************************;
+/*WHAT THIS SUBROUTINE DOES - README!!!*/
+/**/
+/*This subroutine outputs a dataset with the clustering solution.*/
+/*It gives the local modes, as well as their kNN densities. */
+/*This dataset can be used to produce visual representations of the final clustering solutions.*/
+/**/
+/*In order for the subroutine to work, provide the following:*/
+/*1. Give as inputs the matrix of input values (column vectors of xs);*/
+/*2. Provide the algorithm witht he desired value(s) of K*/
+/*3. Specify whether plots should be created, and printing of results should be made*/
+*******************************************************************************************************;
+
+
 start kNN_mode_clus(data, k_density, k_mode_seek, plots, prints);
 
 /*PLOT THE DATA*/
@@ -88,15 +99,11 @@ close;
 
 finish;
 
-call kNN_mode_clus(x2, 100, 100, 0, 0);
+call kNN_mode_clus(x, 600, 600, 1, 1);
 
-/*do k = 50 to 1500 by 50;*/
-/*	Clusters = nclusters // kNN_mode_clus(x, k, k);*/
-/*	K = ks // k;*/
-/*end;*/
 
-/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" 
-image_dpi=300;*/
+/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" */
+/*image_dpi=300;*/
 
 proc print data = plot_data;
 run;
@@ -119,7 +126,7 @@ run;
 
 proc g3d data = new_x2
 	annotate = new_x2;
-	scatter x1*x2 = fx_h / shape="pillar" group = modes;
+	scatter x1*x2 = fx_h / shape="pillar";
 run;
 
 
