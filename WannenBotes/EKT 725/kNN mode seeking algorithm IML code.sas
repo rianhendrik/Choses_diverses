@@ -95,8 +95,8 @@ call kNN_mode_clus(x2, 100, 100, 0, 0);
 /*	K = ks // k;*/
 /*end;*/
 
-ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" 
-image_dpi=300;
+/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" 
+image_dpi=300;*/
 
 proc print data = plot_data;
 run;
