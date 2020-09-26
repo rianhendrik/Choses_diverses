@@ -1,11 +1,13 @@
-
-
-
 proc iml;
 use sasuser.mode1;
 read all into x;
 use sasuser.mode2;
 read all into x2;
+
+/*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/
+ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" 
+image_dpi=300;
+
 
 ******************************************************************************************************;
 /*WHAT THIS SUBROUTINE DOES - README!!!*/
@@ -20,8 +22,9 @@ read all into x2;
 /*3. Specify whether plots should be created, and printing of results should be made*/
 *******************************************************************************************************;
 
+/*DEFINE THE SUBROUTINE BELOW -->*/
 
-start kNN_mode_clus(data, k_density, k_mode_seek, plots, prints);
+start kNN_mode_clus;        
 
 /*PLOT THE DATA*/
 p = ncol(data);
@@ -56,7 +59,7 @@ do i = 1 to n;
 	loc_max_f = window[<:>, 2];
 	mode_x = mat[loc_max_f, 3];
 	do while (mode_x ^= maxi);
-		maxi = mode_x; *This is the index of the local max x value;
+		maxi = mode_x; *This is the serial of the local max x value;
 		mat2 = d[, maxi]||fx_h||serials;
 		call sort(mat2, {1});
 		window2 = mat2[1:k_mode_seek,];
@@ -70,67 +73,98 @@ do i = 1 to n;
 end;
 
 
-/*GATHERING THE RESULTS*/
-basins = data||modes;
-call sort(basins, {1});	
-the_modes = (unique(data[modes,]))`;
-nclus = nrow(the_modes);
-mode_densities = (unique(fx_h_modes))`;
-call sort(mode_densities, {1}, 1);
-if prints = 1 then print nclus;
-if prints = 1 then print basins fx_h;
-if prints = 1 then print the_modes mode_densities;
-x1  = data[, 1];
+*This is very important, Here we find the true x values and the densities corresponding to the serials of the local maxima;
+unique_modes = unique(modes)`;
+indices = J(nrow(unique_modes), 1, .);
+do i = 1 to nrow(unique_modes);
+	indices[i] = loc(plot_data[, p + 2] = unique_modes[i]);
+end;
+
+/*UNIVARIATE CASE*/
+if p = 1 then x1_modes = plot_data[indices, 1];
+if p = 1 then densities_of_modes = plot_data[indices, 2];
+
+/*BIVARIATE CASE*/
+if p = 2 then x1_modes = plot_data[indices, 1];
+if p = 2 then x2_modes = plot_data[indices, 2];
+if p = 2 then densities_of_modes = plot_data[indices, 3];
+
+/*THE VARIABLES*/
+x1 = data[, 1];
 if p = 2 then x2 = data[, 2];
 
-/*ALTERNATIVE MEANS TO OUTPUT THE DATA*/
-*output = data || fx_h || the_modes || mode_densities;
-*return(nclus);
-*cn = {"x1", "fx_h", "the_modes", "mode_densities"};
-*if p = 2 then cn = {"x1", "x2", "fx_h", "the_modes", "mode_densities"};
-*create plot_data from output[colname = cn]; /** create data set **/
-*append from output;       /** write data in vectors **/
-/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/;
-
-if p = 1 then create plot_data var {x1, fx_h, modes, the_modes, mode_densities};
-if p = 2 then create plot_data var {x1, x2, fx_h, modes, the_modes, mode_densities};
+/*CREATING A SAS DATASET FOR PLOTS*/
+if p = 1 then create solution var {x1, fx_h, x1_modes, densities_of_modes, modes};
+if p = 2 then create solution var {x1, x2, fx_h, x1_modes, x2_modes, densities_of_modes, modes};
 append;
-close;
 
 finish;
 
-call kNN_mode_clus(x, 600, 600, 1, 1);
+
+*;***CHANGE INPUTS HERE***;
+*;  data = x2;           *;
+*;  k_density = 200;     *;
+*;  k_mode_seek = 200;   *; 
+*;  plots = 1;           *;
+*;  prints = 0;          *; 
+*;************************;
+
+/*CALL THE SUBROUTINE HERE -->*/
+
+call kNN_mode_clus;
+
+quit;
 
 
-/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" */
-/*image_dpi=300;*/
-
-proc print data = plot_data;
-run;
-
-
-/*FINAL PLOTS*/
-
-/*UNIVARIATE CASE PLOT*/
-proc sort data = plot_data out = new_x1;
+/*SORTING THE DATA FOR PLOTS*/
+proc sort data = solution out = solution_sorted;
 	by x1;
 run;
 
-proc sgplot data=new_x1;
-      series x=x1 y=fx_h;
-	  scatter x = the_modes y = mode_densities / markerattrs =  (symbol = circlefilled color = red);
+
+***************************;
+/*UNIVARIATE RESULT PLOTS*/
+***************************;
+
+/*The modes plotted on the density*/
+proc sgplot data = solution_sorted;
+	series x = x1 y = fx_h;
+	scatter x = x1_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red);
+run;
+
+/*The clustering solution plot*/
+proc sgplot data = solution_sorted;
+	scatter x = x1 y = fx_h / group = modes;
 run;
 
 
-/*BIVARIATE CASE PLOTS*/
+***************************;
+/*BIVARIATE RESULT PLOTS*/ 
+***************************;
 
-proc g3d data = new_x2
-	annotate = new_x2;
+/*Plot of density estimates against the first x variable, with modes marked in red*/
+proc sgplot data = solution_sorted;
+	series x = x1 y = fx_h;
+	scatter x = x1_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red);
+run;
+
+/*Plot of density estimates against the second x variable, with modes marked in red*/
+proc sgplot data = solution_sorted;
+	scatter x = x1 y = fx_h;
+	scatter x = x2_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red)
+run;
+
+/*Plot of bivaraite clustering solution*/
+proc sgplot data = solution_sorted;
+	scatter x = x1 y = x2 / group = modes;
+run;
+
+/*3-Dimensional density plot for bivaraite case*/
+proc g3d data = solution_sorted;
 	scatter x1*x2 = fx_h / shape="pillar";
 run;
 
 
-proc sgplot data = plot_data;
-	scatter x = x1 y = x2 / group = modes;
-run;
+
+
 
