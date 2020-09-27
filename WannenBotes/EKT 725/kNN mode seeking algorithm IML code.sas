@@ -1,11 +1,11 @@
 proc iml;
 use sasuser.mode1;
-read all into x;
+read all into univariate;
 use sasuser.mode2;
-read all into x2;
+read all into bivariate;
 
 /*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/
-ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3\LateX Document" 
+ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3"
 image_dpi=300;
 
 
@@ -29,7 +29,12 @@ start kNN_mode_clus;
 /*PLOT THE DATA*/
 p = ncol(data);
 n = nrow(data);
-if plots = 1 then if p = 1 then call Histogram(data);
+title "Histogram of the univariate dataset";
+if plots = 1 then if p = 1 then call Histogram(data) 
+									 density = {'kernel'}
+									 label = "X1"
+									 rebin = {0, 10};
+
 if plots = 1 then if p = 2 then call Scatter(data[, 1], data[, 2]);
 
 /*ESTIMATING THE DENSITY*/
@@ -75,19 +80,28 @@ end;
 
 *This is very important, Here we find the true x values and the densities corresponding to the serials of the local maxima;
 unique_modes = unique(modes)`;
+
+nclus = nrow(unique_modes);
+if prints = 1 then print nclus;
+
 indices = J(nrow(unique_modes), 1, .);
 do i = 1 to nrow(unique_modes);
 	indices[i] = loc(plot_data[, p + 2] = unique_modes[i]);
 end;
 
+local_modes = plot_data[indices, 1:p];
+
+
 /*UNIVARIATE CASE*/
 if p = 1 then x1_modes = plot_data[indices, 1];
 if p = 1 then densities_of_modes = plot_data[indices, 2];
+if p = 1 then if prints = 1 then print local_modes densities_of_modes;
 
 /*BIVARIATE CASE*/
 if p = 2 then x1_modes = plot_data[indices, 1];
 if p = 2 then x2_modes = plot_data[indices, 2];
 if p = 2 then densities_of_modes = plot_data[indices, 3];
+if p = 2 then if prints = 1 then print local_modes densities_of_modes;
 
 /*THE VARIABLES*/
 x1 = data[, 1];
@@ -101,13 +115,13 @@ append;
 finish;
 
 
-*;***CHANGE INPUTS HERE***;
-*;  data = x2;           *;
-*;  k_density = 200;     *;
-*;  k_mode_seek = 200;   *; 
-*;  plots = 1;           *;
-*;  prints = 0;          *; 
-*;************************;
+*;*******CHANGE INPUTS HERE*******;
+*;  data = univariate;            *;
+*;  k_density = 300;             *;
+*;  k_mode_seek = 300;           *; 
+*;  plots = 0;                   *;
+*;  prints = 1;                  *; 
+*;********************************;
 
 /*CALL THE SUBROUTINE HERE -->*/
 
@@ -126,15 +140,24 @@ run;
 /*UNIVARIATE RESULT PLOTS*/
 ***************************;
 
+
 /*The modes plotted on the density*/
-proc sgplot data = solution_sorted;
-	series x = x1 y = fx_h;
-	scatter x = x1_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red);
+proc sgplot data = solution_sorted noautolegend;
+	series x = x1 y = fx_h / name = "f(x)"; 
+	scatter x = x1_modes y = densities_of_modes /name = "Local Modes" markerattrs =  (symbol = circlefilled color = red);
+	title "kNN density estimate of X1";
+	title2 "(with local modes marked in red)";
+	xaxis label = "X1";
+	yaxis label = "Density Estimates";
 run;
 
 /*The clustering solution plot*/
 proc sgplot data = solution_sorted;
 	scatter x = x1 y = fx_h / group = modes;
+	title "The univariate clustering solution";
+	title2 "(mode indices are used in place of the true mode values)" ;
+	xaxis label = "X1";
+	yaxis label = "Density Estimates";
 run;
 
 
@@ -142,26 +165,37 @@ run;
 /*BIVARIATE RESULT PLOTS*/ 
 ***************************;
 
-/*Plot of density estimates against the first x variable, with modes marked in red*/
+/*The clustering solution plot with respect to x1*/
 proc sgplot data = solution_sorted;
-	series x = x1 y = fx_h;
-	scatter x = x1_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red);
+	scatter x = x1 y = fx_h / group = modes;
+	title "The bivariate clustering solution with respect to X1";
+	title2 "(mode indices are used in place of the true mode values)";
+	xaxis label = "X1";
+	yaxis label = "Density Estimates";
 run;
 
-/*Plot of density estimates against the second x variable, with modes marked in red*/
+/*The clustering solution plot with respect to x2*/
 proc sgplot data = solution_sorted;
-	scatter x = x1 y = fx_h;
-	scatter x = x2_modes y = densities_of_modes / markerattrs =  (symbol = circlefilled color = red)
+	scatter x = x2 y = fx_h / group = modes;
+	title "The bivariate clustering solution with respect to X2";
+	title2 "(mode indices are used in place of the true mode values)";
+	xaxis label = "X2";
+	yaxis label = "Density Estimates";
 run;
+
 
 /*Plot of bivaraite clustering solution*/
 proc sgplot data = solution_sorted;
 	scatter x = x1 y = x2 / group = modes;
+	title "The bivariate clustering solution with respect to X1 and X2";
+	xaxis label = "X1";
+	yaxis label = "X2";
 run;
 
 /*3-Dimensional density plot for bivaraite case*/
 proc g3d data = solution_sorted;
 	scatter x1*x2 = fx_h / shape="pillar";
+	title "A three dimensional plot of the bivariate kNN density estimate";
 run;
 
 
