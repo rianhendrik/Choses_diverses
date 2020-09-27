@@ -4,9 +4,9 @@ read all into univariate;
 use sasuser.mode2;
 read all into bivariate;
 
-/*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/
-ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3"
-image_dpi=300;
+/*/*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/*/
+/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3"*/
+/*image_dpi=300;*/
 
 
 ******************************************************************************************************;
@@ -72,9 +72,7 @@ do i = 1 to n;
 		mode_x = mat2[loc_max_f2, 3];
 	end;
 	modes[i] = mode_x;
-	*true_x_serials = plot_data[, 3]; 
-	loc_of_max = loc(plot_data[, p + 2] = mode_x); *This is the true location (index) of the mode;
-	fx_h_modes[i] = plot_data[loc_of_max, p + 1]; *This should thus be the correct density based on the right location;
+	fx_h_modes[i] = mat2[loc_max_f2, 2];
 end;
 
 
@@ -116,9 +114,9 @@ finish;
 
 
 *;*******CHANGE INPUTS HERE*******;
-*;  data = univariate;            *;
-*;  k_density = 300;             *;
-*;  k_mode_seek = 300;           *; 
+*;  data = bivariate;            *;
+*;  k_density = 200;             *;
+*;  k_mode_seek = 200;           *; 
 *;  plots = 0;                   *;
 *;  prints = 1;                  *; 
 *;********************************;
@@ -200,5 +198,5 @@ run;
 
 
 
-
+*************************** THE END****************************************;
 
