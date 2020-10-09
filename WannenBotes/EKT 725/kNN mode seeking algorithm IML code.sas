@@ -3,10 +3,12 @@ use sasuser.mode1;
 read all into univariate;
 use sasuser.mode2;
 read all into bivariate;
+use sasuser.funky;
+read all into funky;
 
-/*/*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/*/
-/*ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 3"*/
-/*image_dpi=300;*/
+/*SPECIFYING PATH FOR PLOTS, AND PLOT QUALITY*/
+ods listing gpath = "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 4"
+image_dpi=300;
 
 
 ******************************************************************************************************;
@@ -34,7 +36,7 @@ if plots = 1 then if p = 1 then call Histogram(data)
 									 density = {'kernel'}
 									 label = "X1"
 									 rebin = {0, 10};
-
+title "Scatter plot of the bivariate dataset";
 if plots = 1 then if p = 2 then call Scatter(data[, 1], data[, 2]);
 
 /*ESTIMATING THE DENSITY*/
@@ -112,12 +114,11 @@ append;
 
 finish;
 
-
 *;*******CHANGE INPUTS HERE*******;
-*;  data = bivariate;            *;
+*;  data = funky;                *;
 *;  k_density = 200;             *;
 *;  k_mode_seek = 200;           *; 
-*;  plots = 0;                   *;
+*;  plots = 1;                   *;
 *;  prints = 1;                  *; 
 *;********************************;
 
