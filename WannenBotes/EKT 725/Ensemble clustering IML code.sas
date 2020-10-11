@@ -60,7 +60,7 @@ finish;
 
 
 
-nsim = 10;
+nsim = 100;
 ks = do(50, 250, 1)`;
 p = 0.6; n_full = nrow(funky);
 funky = funky||(1:n_full)`; *Adding unique serial numbers to each of the xs;
@@ -83,25 +83,10 @@ end;
 
 
 
-t = S[, 1];
-print t;
-
-tt = I[, 1];
-print tt;
-
-
 C = S/I;
 dissim = 1 - C;
-
-test = vech(dissim);
+test = dissim[, 1];
 print test;
-
-
-
-
-
-
-
 
 /*Toy Example*/
 
@@ -117,4 +102,3 @@ print test;
 /*end;*/
 /**/
 /*print I S;*/
-
