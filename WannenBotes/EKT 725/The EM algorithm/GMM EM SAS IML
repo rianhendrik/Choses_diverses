@@ -1,5 +1,12 @@
 Gaussian mixture modelling using an expectation maximisation algorithm in SAS IML.
 
+
+##########################################################################################################
+#READ ME!
+#This code is based on the work done my H. Zhu. His code and documentation may be access on the link below:
+#https://rpubs.com/H_Zhu/246450
+############################################################################################################
+
 data em3;
 infile "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 5\Data\m3.txt";
 input x;
