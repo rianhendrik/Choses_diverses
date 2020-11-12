@@ -1,10 +1,32 @@
-proc sgplot data = sasuser.funky;
-	scatter x = x1 y = x2;
+quit;
+dm 'odsresults;clear';
+options ls=72 nodate pageno=1 nocenter; 
+
+
+
+data data;
+set ???;
 run;
 
+/*proc sgplot data = data;*/
+/*	scatter x = x1 y = x2;*/
+/*run;*/
+
 proc iml;
-use sasuser.funky;
-read all into funky;
+use sasuser.funky; *change this for test;
+read all into data;
+
+c1 = J(600, 1, 1);
+c2 = J(632, 1, 2);
+c3 = J(568, 1, 3);
+
+clusts = c1 // c2 // c3;
+
+run Scatter(data[, 1], data[, 2]) group = clusts;
+
+
+data_or = data;
+
 
 /*THE kNN SUBROUTINE*/
 
@@ -57,21 +79,21 @@ results = data[, p]||modes_true||data[, 1:p - 1];
 
 finish;
 
+funky = data; *Whatever my dataset is in the test, I will change its name to funky here.;
 
-
-
-nsim = 100;
-ks = do(50, 250, 1)`;
-p = 0.6; n_full = nrow(funky);
+nsim = 50;
+ks = do(50, 250, 1)`; 
+prob = 0.6; n_full = nrow(funky);
 funky = funky||(1:n_full)`; *Adding unique serial numbers to each of the xs;
 I = J(n_full, n_full, 0); S = J(n_full, n_full, 0);
+
 do iter = 1 to nsim;
-	p = 0.6;
+	prob = 0.6;
 	n_full = 1800;
 	k = sample(ks, 1)`;
 	obs = (1:n_full)`;
-	samp_obs = sample(obs, p*n_full, 'WOR')`;
-	data = funky[samp_obs, ];
+	samp_obs = sample(obs, prob*n_full, 'WOR')`;
+	data = funky[samp_obs, ]; *Note that funky now consists of the data, and serials;
 	call kNN_mode_clus;
 	do ii = 1 to nrow(results);
 		do j = 1 to nrow(results);
@@ -81,16 +103,39 @@ do iter = 1 to nsim;
 	end;
 end;
 
-
-
 C = S/I;
 dissim = 1 - C;
 test = dissim[, 1];
 print test;
 
-/*Toy Example*/
+create dissim_data from dissim;
+append from dissim;
 
-/*m = {1 2, 2 2, 4 1};*/
+data a (type = distance);
+set dissim_data;
+run;
+
+proc cluster data = a method = average outtree = b ;
+run;
+
+proc tree noprint ncl = 3 out = out;
+run;
+
+proc iml;
+use out; read all into final_solution;
+use sasuser.funky; read all into data;
+plot_d = data || final_solution;
+
+run Scatter(plot_d[, 1], plot_d[, 2]) group = plot_d[, 3];
+
+
+
+
+
+
+/*Toy Example*/
+/**/
+/*m = {1 2, 2 2, 4 1}; *First column represents the observations in the sample, and the second column represents the observation which is the mode of the cluster each of the observations belong to.;*/
 /*I = J(5, 5, 0);*/
 /*S = J(5, 5, 0);*/
 /*print I S;*/
@@ -102,3 +147,4 @@ print test;
 /*end;*/
 /**/
 /*print I S;*/
+
