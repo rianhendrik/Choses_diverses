@@ -36,12 +36,13 @@ start kmeans_clus;
 
 *Total deviation;
 	td_data = overall_mean // points;
-	td_dists = distance(td_data);
-	T = sum(td_dists);
+	td_dists = distance(td_data)[, 1]; *We are only interested in the first column, the distance between the centroid and all the individual obervations;
+	T = td_dists`*td_dists; *This is the sum of squared distances of each observation from the overall mean; 
+
 
 *Assigning each observation to a centroid;
 
-	do iter = 1 to 10 while (conv = 0);
+	do iter = 1 to 100 while (conv = 0);
 		count = count + 1;
 		clust_data = inits // points;
 		clust_dist = distance(clust_data);
@@ -53,15 +54,18 @@ start kmeans_clus;
 		resp_obs = resp[k + 1:nrow(resp),];
 
 		new_centroids = J(k, d, .); wcd_k = J(k, 1, .);
+		*print iter;
 		do j = 1 to k;
 			cluster_j = loc(resp_obs = j);
+			len = ncol(cluster_j); *print len;
 			points_j = points[cluster_j,];
-			wcd_data = inits[j, ] // points_j; wcd_dist = distance(wcd_data);
-			wcd_k[j] = sum(wcd_dist);
+			wcd_data = inits[j, ] // points_j; wcd_dist = distance(wcd_data)[, 1]; *We are onlt interested in the distane of each cluster centroid to the observations in its cluster;
+			wcd_k[j] = wcd_dist`*wcd_dist;
 			new_centroids[j, ] = points_j[+,]/nrow(points_j);
 		end;
 		W = sum(wcd_k); B = T - W; tt = W + B;
-		r2 = B/T; F = (B/(d - 1))/(W/(n - d)); if d = 1 then F = (B/(d))/(W/(n - d));
+		c = k;
+		r2 = B/T; F = (B/(k - 1))/(W/(n - k)); 
 
 		if new_centroids = inits then conv = 1; 
 								 else conv = 0;
@@ -76,15 +80,15 @@ finish;
 n = nrow(points);
 d = ncol(points); *number of variables in dataset;
 k = 3; *number of clusters we want;
-random = 'obs'; *random inital points selected from observations;
-inits = {10 30, 20 40, 40 40}; *predetermined inital values 2D;
-conv = 0; count = 0; pr = 1;
-
-
-
+random = 'no'; *random inital points selected from observations;
+inits = {95 95, 100 100, 105 105}; *predetermined inital values 2D;
+conv = 0; count = 0; pr = 1; *conv must be 0, and will become 1 if the centroids converge. Then, the while loop will stop.;
 
 
 call kmeans_clus;
+
+plt = points || resp_obs;
+run Scatter(plt[, 1], plt[, 2]) group = plt[, 3];
 
 /*SOME GMM CALCULATIONS*/
 
@@ -100,9 +104,9 @@ call kmeans_clus;
 
 
 
-nsim = 10;
-Ws = J(nsim, 1, .);
-do k = 1 to nsim;
+nsim = 100;
+Ws = J(nsim, 1, .); Fs = J(nsim, 1, .);
+do k = 2 to nsim;
 	pr = 0;
 	n = nrow(points);
 	d = ncol(points); *number of variables in dataset;
@@ -110,8 +114,11 @@ do k = 1 to nsim;
 	conv = 0; count = 0;
 	call kmeans_clus;
 	Ws[k] = W;
+	Fs[k] = F;
 end;
 
 /*The elbow plot*/
 k = (1:nsim);
 run Series(k, Ws);
+run Series(k, Fs);
+
