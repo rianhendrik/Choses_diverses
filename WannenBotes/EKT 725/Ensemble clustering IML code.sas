@@ -13,20 +13,16 @@ run;
 /*run;*/
 
 proc iml;
-use sasuser.funky; *change this for test;
+use sasuser.fivegaussians; *change this for test;
 read all into data;
 
-c1 = J(600, 1, 1);
-c2 = J(632, 1, 2);
-c3 = J(568, 1, 3);
-
-clusts = c1 // c2 // c3;
-
-run Scatter(data[, 1], data[, 2]) group = clusts;
-
-
-data_or = data;
-
+/*c1 = J(600, 1, 1);*/
+/*c2 = J(632, 1, 2);*/
+/*c3 = J(568, 1, 3);*/
+/**/
+/*clusts = c1 // c2 // c3;*/
+/**/
+/*run Scatter(data[, 1], data[, 2]) group = clusts;*/
 
 /*THE kNN SUBROUTINE*/
 
@@ -81,15 +77,15 @@ finish;
 
 funky = data; *Whatever my dataset is in the test, I will change its name to funky here.;
 
-nsim = 50;
-ks = do(50, 250, 1)`; 
+nsim = 100;
+ks = do(50, 90, 1)`; 
 prob = 0.6; n_full = nrow(funky);
 funky = funky||(1:n_full)`; *Adding unique serial numbers to each of the xs;
 I = J(n_full, n_full, 0); S = J(n_full, n_full, 0);
 
 do iter = 1 to nsim;
 	prob = 0.6;
-	n_full = 1800;
+	n_full = 501;
 	k = sample(ks, 1)`;
 	obs = (1:n_full)`;
 	samp_obs = sample(obs, prob*n_full, 'WOR')`;
@@ -118,7 +114,7 @@ run;
 proc cluster data = a method = average outtree = b ;
 run;
 
-proc tree noprint ncl = 3 out = out;
+proc tree noprint ncl = 5 out = out;
 run;
 
 proc iml;
