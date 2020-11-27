@@ -1,24 +1,31 @@
-Gaussian mixture modelling using an expectation maximisation algorithm in SAS IML.
-
-
-##########################################################################################################
-#READ ME!
-#This code is based on the work done my H. Zhu. His code and documentation may be access on the link below:
-#https://rpubs.com/H_Zhu/246450
-############################################################################################################
+dm 'odsresults;clear';
 
 data em3;
 infile "C:\Users\rianh\OneDrive - University of Pretoria\Documents\Rian 2020\Semester 2\EKT 725\Assignment 5\Data\m3.txt";
 input x;
 run;
 
+data data;
+set em3;
+run;
+
+proc fastclus data = sasuser.gmm_bivar out = clust maxclusters = 3;
+	var x1 x2;
+run;
+
+
 
 proc iml;
-use em3;
+use data;
 read all into x;
+x1 = x[, 1]; x2 = x[, 2];
+call Scatter(x1, x2);
 
 
-/*kmeans results from R*/
+
+pr = 1; *to print results on each iteration.
+
+kmeans results from R*/;
 mu1 = 152.9469;
 mu2 = 94.40457;
 mu3 = 220.0142;
@@ -30,6 +37,15 @@ sigma3 = 19.76735;
 pi1 = 0.4866667;
 pi2 = 0.1;
 pi3 = 0.4133333;
+
+
+
+
+
+
+
+comps = 5;
+n = nrow(x);
 
 
 q = 0;
@@ -73,9 +89,14 @@ do while (abs(q[k] - q[k - 1]) >= tol);
 	k = k + 1;
 	q = q // sum(log(comp_sum));
 
+	if pr = 1 then print k ,, mu1 sigma1 pi1 ,, mu2 sigma2 pi2 ,, mu3 sigma3 pi3;
+
 end;
 
-print k,, mu1 mu2 mu3,, sigma1 sigma2 sigma3;
+AIC = 2*comps - 2*q[k];
+BIC = comps*log(n) - 2*q[k];
+
+print k,, mu1 mu2 mu3,, sigma1 sigma2 sigma3 ,, AIC BIC;
 
 
 
