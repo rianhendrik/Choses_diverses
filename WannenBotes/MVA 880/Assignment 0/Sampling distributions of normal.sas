@@ -54,6 +54,26 @@ end;
 
 print CDF_prob_e CDF_prob_t support;
 
+/* Here I am trying do calculate the theoretical CDF differently */
+/* xs = do(-5, 25, 0.001);
+ind = J(nrow(xs), 1, 0);
+theo_cdf2 = J(nrow(xs), 1, .);
+emp_cdf2 = J(nrow(xs), 1, .);
+do i = 1 to nrow(xs);
+	do j = 1 to nrow(xs);
+		if x
+	
+	the_cdf2[i] */
+	
+/* KS */
+diffs = abs(cdf_prob_e - cdf_prob_t);
+KS = max(diffs);
+cv = 0.28988; *if alpha = 0.05, n = 30;
+tt = sqrt(sample_size)*KS;
+if tt < cv then print "We reject the H0 that Fe = F at a 5% level of significance" else print "We do not reject the H0 at a 5% level of significance"
+if tt
+	
+
 
 title "Emperical CDF from 6000 samples of a N(10,9) parent distribution";
 *run Series(support, CDF_prob_e);
