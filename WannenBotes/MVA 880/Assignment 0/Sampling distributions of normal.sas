@@ -19,7 +19,7 @@ samples = shape(x, sample_size, sample_n);
 sample_means = t(samples[+,]/sample_size);
 *Here we compute the mean of our sampling distribution;
 mean_of_sampling_dist = mean(sample_means); print mean_of_sampling_dist Mean;
-std_deviation_of_sampling_dist = std(sample_means); sigma = 3/sqrt(sample_size); print std_deviation_of_sampling_dist sigma;
+std_of_sampling_dist = std(sample_means); sigma = 3/sqrt(sample_size); print std_of_sampling_dist sigma;
 *We see that the sampling distribution of X_bar has an expected value of +-10.
 *If we increase our sample size n, we will obtain values closer to 10, which is
 the true (theoretical) expected value of the sampling distribution of X_bar.
@@ -64,23 +64,16 @@ run Series(x, CDF_probs) group = g;
 
 
 /* It is known that the 95% confidence interval for xbar is (8.92648, 11.0735).  */
-quit;
-proc iml;
-ub = 11.0735; lb = 8.92648;
-nsim = 10000;
-n = 30;
-mean = 10; var = 9;
-xbars = J(nsim, 1, .);
-do i = 1 to nsim;
-	x = RandNormal(n, 10, var); 
-	xbars[i] = mean(x);
-end;
+
+xbars = sample_means;
 print xbars;
+moe = quantile('normal', 0.975, 0, 1)*std(xbars);
+ub = mean+moe; lb = mean-moe;
 
 higher = loc(xbars>ub);
 lower = loc(xbars<lb);
 oob = ncol(higher)+ncol(lower);
-pooob = oob/nsim;
+pooob = oob/nrow(xbars);
 print pooob;
 
 	
