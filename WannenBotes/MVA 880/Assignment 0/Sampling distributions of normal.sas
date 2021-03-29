@@ -4,7 +4,7 @@ proc iml;
 *Question 1a
 
 call randseed(1);
-N = 600;
+N = 6000;
 Mean = {10};
 Cov = {9};
 sample_size = 30;
@@ -16,9 +16,10 @@ x = RandNormal( N, Mean, Cov );
 *Reshaping vector to obtain 200 samples of size 30 each;
 samples = shape(x, sample_size, sample_n);
 *Obtaining the sample mean of each sample;
-sample_means = samples[+,]/sample_size;
+sample_means = t(samples[+,]/sample_size);
 *Here we compute the mean of our sampling distribution;
-mean_of_sampling_dist = mean(t(sample_means)); print mean_of_sampling_dist;
+mean_of_sampling_dist = mean(sample_means); print mean_of_sampling_dist Mean;
+std_deviation_of_sampling_dist = std(sample_means); sigma = 3/sqrt(sample_size); print std_deviation_of_sampling_dist sigma;
 *We see that the sampling distribution of X_bar has an expected value of +-10.
 *If we increase our sample size n, we will obtain values closer to 10, which is
 the true (theoretical) expected value of the sampling distribution of X_bar.
