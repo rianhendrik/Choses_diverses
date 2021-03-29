@@ -1,72 +1,74 @@
-/* Question 4: Numerical differentiation */
-
 proc iml;
 
-h = 0.00001;
-x = 5;
-der11 = (sin(x+h) - sin(x))/h;
-der11_test = cos(x);
-*der12 = ();
-print der11 der11_test;
 
-start deriver(n, x, h);
+/*Question 1's objective function*/
+start q1_func(x);
+	return sin(x);
+finish;
+
+h = 0.00001; *the step size;
+x = 5;  *the point that we are evaluating question 1's derivatives at;
+
+/*The Newton's difference quotient deriver function*/
+start deriver(func, n, x, h);
 	res_k = 0;
 	do k = 0 to n;
-		res_k = res_k+(((-1)##(k+n))#comb(n,k)#sin(x+k#h));
+		funky = "z =" + func + "(x+k#h);";
+		call execute(funky);
+		res_k = res_k+(((-1)##(k+n))#comb(n,k)#z);
 	end;
 	return((1/h##n)#res_k);
 finish;
 
-
-
-
-t = deriver(2, 5, h); print t;
+/*First derivative of sin(x) with respect to x*/
+der11 = deriver('q1_func', 1, x, h);
+/*Second derivative of sin(x) with respect to x*/
+der12 = deriver('q1_func', 2, x, h); 
+print der12 der11;
 
 /* Question 2 */
-/* First derivative wrt x */
-start deriver(n, x, y, h);
+
+/*If derivative is w.r.t x*/
+start deriverx(func, n, x, y, h);
 	res_k = 0;
 	do k = 0 to n;
-		res_k = res_k+(((-1)##(k+n))#comb(n,k)#(3#y#(x+k#h)+(x+k#h)##2));
+		funky = "z =" + func + "(x+k#h, y);";
+		call execute(funky);
+		res_k = res_k+(((-1)##(k+n))#comb(n,k)#z);
+	end;
+	return((1/h##n)#res_k);
+finish;
+/*If derivative is w.r.t y*/
+start derivery(func, n, x, y, h);
+	res_k = 0;
+	do k = 0 to n;
+		funky = "z =" + func + "(x, y+k#h);";
+		call execute(funky);
+		res_k = res_k+(((-1)##(k+n))#comb(n,k)#z);
 	end;
 	return((1/h##n)#res_k);
 finish;
 
-test1 = deriver(2, 5, 3, 0.01, 'func'); print test1;
-/* First derivative wrt y */
-start deriver(n, x, y, h);
-	res_k = 0;
-	do k = 0 to n;
-		res_k = res_k+(((-1)##(k+n))#comb(n,k)#(3#x#(y+k#h)+(y+k#h)##2));
-	end;
-	return((1/h##n)#res_k);
+
+/*Question 2's objective function*/
+start q2a_func(x, y);
+	return 3#x#y+x##2+y##2;
+finish;
+x = 5; y = 3;
+
+q2a = deriverx('q2a_func', 1, x, y, h);
+print q2a;
+q2b = derivery('q2a_func', 1, x, y, h);
+print q2b;
+
+start q2c_func(x, y);
+	return 3#y + 2#x;
 finish;
 
-test2 = deriver(1, 5, 3, h); print test2;
+q2c = derivery('q2c_func', 1, x, y, h);
+print q2c;
 
+q2d = deriverx('q2a_func', 2, x, y, h);
+print q2d;
 
-/* Second derivative wrt x, then y */
-start deriver(n, x, y, h);
-	res_k = 0;
-	do k = 0 to n;
-		res_k = res_k+(((-1)##(k+n))#comb(n,k)#(3#(y+h#k)));
-	end;
-	return((1/h##n)#res_k);
-finish;
-
-test3= deriver(1, 5, 3, h); print test3;
-
-
-
-
-/* First derivative wrt y then second derivative wrt x */
-
-
-
-
-
-
-
-
-
-		
+/*The end*/
