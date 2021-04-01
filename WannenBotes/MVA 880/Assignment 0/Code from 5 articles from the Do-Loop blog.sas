@@ -37,12 +37,7 @@ quit;
 /*The 'Do Loop' blog post 3: Passing values from PROC IML into SAS procedures*/
 
 
-proc iml;  
-pctl = {2.5 10 50 90 97.5};           
-s = rowcat( char(pctl)+" " );         
-call symputx("PctList", s);           
-quit;
-
+PAUL CODE
 *having created a macro of this percentile list in IML, you can pass it into a SAS procedure, like so:;
 proc univariate data=sashelp.cars;
    var MPG_City;
