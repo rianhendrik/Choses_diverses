@@ -1,14 +1,15 @@
 proc iml;
-use sasuser.pcomp;
-read all into d;
+use sasuser.pcomp; read all into d;
+use sasuser.dat2; read all into d2;
 
 /*EXPLANATION OF MODULE INPUTS*/
 /*dmat - data matrix*/
 /*plots - TRUE/FALSE (depending on if you want plots generated or not*/
 /*corr - TRUE/FALSE (depending on if you want eigenvectors and values derived from correlation or var-cov matrix*/
 
-start PCA(dmat, plots, corr, print);
-mean = dmat[:,]; dmatc = dmat-mean; *centering your data;
+start PCA; *(dmat, plots, corr, print);
+mean = dmat[:,]; dmatc = dmat-mean; *centering your data; *Should I not maybe standadise it?;
+
 
 n = nrow(dmat); p = ncol(dmat); *defining row and column dimensions of the data set;
 covmat = (dmatc`*dmatc)/(n-1); *calculating variance-covariance matrix of data;
@@ -30,7 +31,7 @@ if plots = "true" then submit;
   	title "Skree plot";
     series x = x y = y;
    	xaxis grid label="Principal component";
-    yaxis grid label="Eigenvalues";
+    yaxis grid label="Eigenvalues";2
   run;
 endsubmit;
 
@@ -59,11 +60,19 @@ print "The number of components with eigenvalues greater then 1 is" g1;
 
 /*Determining the correlation between each component and each original data variable*/
 
-if print = "true" then print pcomps;
+evalmat = repeat(evalues, ncol(evalues), nrow(evalues));
+row_titles = do(1, p, 1);
+col_titles = do(0, p, 1);
+influence = col_titles//(t(row_titles)||(evectors#sqrt(evalmat)));
 
 finish;
 
-call PCA(d, "true", "true", "true");
+dmat=d; corr="true"; plots="true";
 
+call PCA; *(d2, "true", "true", "true");
 
+print influence evectors;
+
+test = evectors[,1]`*evectors[,2];
+print test;
 
