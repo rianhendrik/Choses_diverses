@@ -1,6 +1,7 @@
 proc iml;
 use sasuser.pcomp; read all into d;
 use sasuser.dat2; read all into d2;
+use sasuser.dat3; read all into d3;
 
 /*EXPLANATION OF MODULE INPUTS*/
 /*dmat - data matrix*/
@@ -31,7 +32,7 @@ if plots = "true" then submit;
   	title "Skree plot";
     series x = x y = y;
    	xaxis grid label="Principal component";
-    yaxis grid label="Eigenvalues";2
+    yaxis grid label="Eigenvalues";
   run;
 endsubmit;
 
@@ -63,16 +64,15 @@ print "The number of components with eigenvalues greater then 1 is" g1;
 evalmat = repeat(evalues, ncol(evalues), nrow(evalues));
 row_titles = do(1, p, 1);
 col_titles = do(0, p, 1);
-influence = col_titles//(t(row_titles)||(evectors#sqrt(evalmat)));
+influence = col_titles//(t(row_titles)||(evectors#sqrtevalmat)));
 
 finish;
 
-dmat=d; corr="true"; plots="true";
+dmat=d2; corr="true"; plots="true";
 
 call PCA; *(d2, "true", "true", "true");
 
-print influence evectors;
+print evalues evectors,, influence;
 
-test = evectors[,1]`*evectors[,2];
-print test;
+
 
