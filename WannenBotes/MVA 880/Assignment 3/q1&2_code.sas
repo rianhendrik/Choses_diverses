@@ -33,7 +33,7 @@ start si; *si - similarity index;
 	do i = 1 to n;
 		do j = 1 to n;
 			CP = dmat[i,]*t(dmat[j,]);
-			CA = p - dmat[i,]*t(I1) - I1*t(dmat[j,]) + CP;
+			CA = (I1 - dmat[i,])*(I1 - dmat[j,])`;*p - dmat[i,]*t(I1) - I1*t(dmat[j,]) + CP;
 			AP = n-sum(dmat[i,]) - CA;
 			PA = n-sum(dmat[j,]) - CA;
 			sokal_michener[i,j] = (CP + CA)/p;
@@ -42,8 +42,11 @@ start si; *si - similarity index;
 		end;
 	end;
 	dist = distance(dmat);
-	avg_euclid2 = dist/p; *calculated to show that 1-Sokal-Michener is the same as average squared Euclidian distance;
+	dist2 = dist##2; 
+	avg_euclid2 = dist2/p; *calculated to show that 1-Sokal-Michener is the same as average squared Euclidian distance;
 finish;
+
+
 
 *printig the three requested similarity indices;
 call si;
@@ -54,7 +57,7 @@ print "Three similarity indices (SIs)",,
 	  
 *Emperically showing that 1-Sokal-Michener is the same as average squared Euclidian distance;
 dissim_sokal_michener = 1-sokal_michener;
-print "Emperically illustratingt that 1 - Sokar-Michener index is the same as average squared Euclidian distance",,
+print "Emperically illustrating that 1 - Sokar-Michener index is the same as average squared Euclidian distance",,
 	  "1-Sokal-Michener: A dissimilarity matrix.",,
 	  dissim_sokal_michener[label=none],,
 	  "Average squared Euclidian distance matrix:",,
