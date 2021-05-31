@@ -72,11 +72,11 @@ results = data[, p]||modes_true||data[, 1:p - 1];
 
 finish;
 
-k = 200; 
+k = 150; 
 call kNN_mode_clus;
 funky = data; *Whatever my dataset is in the test, I will change its name to funky here.;
 
-nsim = 100;
+nsim = 200;
 ks = do(50, 300, 1)`; 
 prob = 0.6; n_full = nrow(funky);
 funky = funky||(1:n_full)`; *Adding unique serial numbers to each of the xs;
@@ -217,16 +217,16 @@ data a (type = distance);
 set dissim_data;
 run;
 
-proc cluster data = a method = average outtree = b ;
+proc cluster data = a method = average outtree = b noprint ;
 run;
 
-proc tree noprint ncl = 2 out = out;
+proc tree data = b noprint ncl = 2 out = out;
 run;
 
 
 proc iml;
 use out; read all into final_solution;
-use sasuser.funky; read all into data;
+use mva880.mode2; read all into data; data = data[,2:3];
 plot_d = data || final_solution;
 
 run Scatter(plot_d[, 1], plot_d[, 2]) group = plot_d[, 3];
