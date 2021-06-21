@@ -69,47 +69,9 @@ start vec_mult(probs); *a function to find the product of a ROW vector;
 	return(product);
 finish;
 
-*test;
-/*mu_1 = (means_std[,1])`;*/
-/*dig1 = data[1,];*/
-/*probs = ber(dig1, mu_1);*/
-/*denom_k =  vec_mult(probs);*/
-/*t = denom_k#100;*/
-/*print probs,, denom_k,, t;*/
 
 /*EXPECTATION STEP*/
 /*Here, we want to find the probability that the ith digit belongs to the kth component*/
-
-
-
-*print iter;
-
-/*UNDERSTANDING WHY SOME zik numerators are 0;*/
-
-*My solution to this problem is to set these 0 values to a very small value close to 0.
-
-/*dc = data[34,]`;*/
-/*mu1 = means[,1];*/
-/*print dc mu1;*/
-/**/
-/*test = ber(dc`, mu1`);*/
-/*print test;*/
-/**/
-/*test2 = vec_mult(test);*/
-/*print test2;*/
-/**/
-/*start vec_mult; *a subroutine to find the product of a ROW vector; */
-/*	product = probs[1]*probs[2]; *probs is a row vector of D probabilities from the D Bernouli pmf's - outputed by the ber() function;*/
-/*	print product;*/
-/*	do i = 3 to ncol(probs);*/
-/*		product = product*probs[i];*/
-/*		print i product;*/
-/*	end;*/
-/*finish;*/
-/**/
-/*probs = test;*/
-/**/
-/*call vec_mult;*/;
 
 
 do iter = 1 to 30;
@@ -151,6 +113,8 @@ end;
 *print nks;
 
 
+*UPDATE STEP - NEW MEANS, AND NEW PI's
+
 mu1 = (data`*zik[,1])/nks[1];
 zeros1 = loc(mu1=0);
 mu1[zeros1] = 0.001;
@@ -184,16 +148,6 @@ call HeatmapCont(digit_i);
 
 
 means = mu1||mu2||mu3;
-
-/*data1 = data[1,];*/
-/*mean1 = means[,1];*/
-/*print data1 mean1;*/
-/**/
-/*test = ber(data1, mean1`);*/
-/*print test;*/
-/**/
-/**/
-/*print pis means;*/
 
 end;
 
