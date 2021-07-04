@@ -3,12 +3,17 @@ ods html;
 
 libname MVA880 "C:\Users\rianh\Dropbox\MVA880\MVA_data";
 
+
+
+
 proc iml;
 use mva880.digitq3;
 read all into data;
-i = 36;
-digit_i = shape(data[i,], 16, 16);
-call HeatmapCont(digit_i);
+
+/*i = 597;*/
+/*digit_i = shape(data[i,], 16, 16);*/
+/*call HeatmapCont(digit_i);*/
+
 
 
 pixel_r = 16;
@@ -23,35 +28,19 @@ n = nrow(data);
 call randseed(123);         /* set random number seed */
 means = j(D, K, .);                /* allocate */
 call randgen(means, "Uniform", 0.25, 0.75); /* u ~ U(0,1) */
-print means;
-
 
 means_std = means/means[+,];
 test = means_std[+,];
-print means_std test;
+*print means_std test;
 
-
-means = means_std;
-
-*print means;
+means = means_std; *making sure that we are using the standardised means;
 
 *Visualising the means - we want to do this after each EM iteration to see how the means are changing for eack component to reflect the digits they represent;
-digit_i = shape(means[,1], 16, 16);
-call HeatmapCont(digit_i);
-
-/*mu1 = means[,1];*/
-/*mu2 = means[,2];*/
-/*mu3 = means[,3];*/
+/*digit_i = shape(means[,3], 16, 16);*/
+/*call HeatmapCont(digit_i);*/
 
 *random initial pi values - K = 3, therefore three pi's.;
-
-pi1 = 1/3;
-pi2 = 1/3;
-pi3 = 1/3;
-
-pis = pi1//pi2//pi3;
-print pis;
-
+pis = J(k, 1, 1/k);
 
 /*Univariate Bernoulli pmf;*/
 start ber(x, mu);
@@ -70,89 +59,136 @@ start vec_mult(probs); *a function to find the product of a ROW vector;
 finish;
 
 
-/*EXPECTATION STEP*/
-/*Here, we want to find the probability that the ith digit belongs to the kth component*/
+tol = 1;
 
+*iter = 0;
+loglik = {0, 1};
+q = 2;
 
+*do while ( (loglik[q] - loglik[q-1]) <= tol );
 do iter = 1 to 30;
-print iter;
 
 
 
-zik = J(n, k, .);
-do comp_k = 1 to k; * iterate through each component ;
+	q = q + 1; *for log likelihood tracker;
+	*iter = iter + 1; 
+
+	gamma_ik = J(n, k, .);
 	do i = 1 to n; * we want to find gamma zik for the ith digit in the kth component ;	
 		denoms = J(k, 1, .); *to store the values that will be summed to form the denominator to compute gamma(zik) ; 
 		data_i = data[i,]; *we are considering the ith digit, the outcome of each of the D Bernoullis, as a row vector ;
-		prob_comp_k = ber(data_i, (means[,comp_k])`); 
-		prob_k_mv = vec_mult(prob_comp_k); *prob_k_mv is the prob we will use in the numerator of the gamma(zik) calculation; 
+
 		do mv_prob = 1 to k; *calculating k mv_probs (multivariate probabilities), therefore iterating k times ;
-			probs = ber(data_i, (means[,mv_prob])`); *we are finding the probabilities of each the D Bernoulli outcomes, given the "old" means for the kth component (digit) ;
-			mv_prob_k = vec_mult(probs);
-			if mv_prob_k = 0 then mv_prob_k = 0.000001; *This is to prevent a zero in the denominator;
+			probs = ber(data_i, (means[,mv_prob])`); *probability of observing the D pixels in digit_i under the "old" D means for the kth component;
+			mv_prob_k = vec_mult(probs); *probability of observing digit_i (as a MVBernoulli) under the "old" means for the kth component;
+			if mv_prob_k = 0 then mv_prob_k = 0.000001; *This is to prevent a zero value;
 			denoms[mv_prob] = pis[mv_prob]#mv_prob_k; *the kth element of the denominator, all these will be summed together for the complete denom ;
 		end;
-		if prob_k_mv = 0 then prob_k_mv = 0.000001;
-		zik_numerator = pis[comp_k]#prob_k_mv;
-		*if zik_numerator = 0 then print comp_k i,, prob_k_mv;
-		zik_denominator = sum(denoms);
-	zik[i, comp_k] = zik_numerator/zik_denominator;
-	*print zik_numerator,, zik_denominator;
+		*Calculating gammas (expected values of zik);
+		do iterg = 1 to k;
+	 		gamma_ik[i,iterg] = denoms[iterg]/sum(denoms); *the values in denoms have already been multiplied by their respective pis's;	
+		end;
 	end;
+
+	/*COMPLETE LOG LIKELIHOOD STEP*/
+	*calculating the value of the log-likelihood function;
+	lik_image_i = J(n, k, .);
+/*	do i = 1 to n;*/
+/*		do j = 1 to k;*/
+/*			q1 = (data[i,])`#log(means[,k]) + (1-(data[i,])`)#log(1-means[,k]);	*/
+/*			q2 = gamma_ik[i,k] # (log(pis[k]) + sum(q1));*/
+/*			lik_image_i[i,j] = q2;*/
+/*		end;	*/
+/*	end;*/
+
+	do i = 1 to n;
+		do j = 1 to k;
+			q1 = (data[i,])`#log(means[,k]) + (1-(data[i,])`)#log(1-means[,k]);	
+			q2 = (log(pis[k]) + sum(q1));
+			lik_image_i[i,j] = q2;
+		end;	
+	end;
+
+
+/*	do i = 1 to n;*/
+/*		do j = 1 to k;*/
+/*			q1 = vec_mult(ber(data[i,], (means[,j])`));*/
+/*			if q1 = 0 then q1 = 0.000001;*/
+/*			q2 = pis[j]#q1;*/
+/*			lik_image_i[i,j] = q2;*/
+/*		end;*/
+/*	end;*/
+	*newest_loglik = sum(log(lik_image_i[,+]));
+	newest_loglik = sum(lik_image_i[,+]); *old (possibly incorrect loglik function);
+	loglik = loglik//newest_loglik;
+
+
+	/*MAXIMISATION STEP*/
+	/*UPDATING PARAMETERS*/
+
+	*new effective sample sizes;
+	nks = J(k, 1, .); *calculating our effective sample size;
+	do i  = 1 to k;
+		nks[i] = gamma_ik[+,i];
+	end;
+
+	*new mean (parameter) vectors;
+	means = J(D, k, .);
+	do i = 1 to k;
+		means[,i] = (data`*gamma_ik[,i])/nks[i]; 
+	end;
+	do i = 1 to D;
+		do j = 1 to k;
+			if means[i,j] = 0 then means[i,j] = 0.00001; *To prevent a mean of 0, so that we do not have a 0##0 in the bernoulli pmf, resulting ber() crash;
+		end;
+	end;
+
+
+	*new pi's';
+	pis = J(k, 1, .);
+	do i  = 1 to k;
+		pis[i] = nks[i]/n;
+	end;
+
+	print iter;
+
+	do comp_means = 1 to k;
+		print comp_means;
+		means_k = shape(means[,comp_means], 16, 16);
+		call HeatmapCont(means_k);
+	end;
+
 end;
 
-*print zik;
+print loglik;
 
-/*MAXIMISATION STEP*/
-
-nks = J(k, 1, .); *calculating our effective sample size;
-do i  = 1 to k;
-	nks[i] = zik[+,i];
-end;
-
-*print nks;
-
-
-*UPDATE STEP - NEW MEANS, AND NEW PI's
-
-mu1 = (data`*zik[,1])/nks[1];
-zeros1 = loc(mu1=0);
-mu1[zeros1] = 0.001;
-
-mu2 = (data`*zik[,2])/nks[2];
-zeros2 = loc(mu2=0);
-mu2[zeros2] = 0.001;
-
-mu3 = (data`*zik[,3])/nks[3];
-zeros3 = loc(mu3=0);
-mu3[zeros3] = 0.001;
+mean = mean(loglik); print mean;
+iterr = do(1, nrow(loglik), 1);
+title "Likelihood plot over iterations";
+call series(iterr, loglik) other = "refline -276172.6 / axis = y";
 
 
 
 
 
-pi1 = nks[1]/n;
-pi2 = nks[2]/n;
-pi3 = nks[3]/n;
-
-pis = pi1//pi2//pi3;
-
-digit_i = shape(mu1, 16, 16);
-call HeatmapCont(digit_i);
-
-digit_i = shape(mu2, 16, 16);
-call HeatmapCont(digit_i);
-
-digit_i = shape(mu3, 16, 16);
-call HeatmapCont(digit_i);
-
-
-means = mu1||mu2||mu3;
-
-end;
 
 
 
 
 
-quit;
+
+
+/*do iter = 280 to 340;*/
+/*	class_t = max(gamma_ik[iter,]);*/
+/*	class = loc(gamma_ik[iter,] = class_t);*/
+/*	if class = 1 then number = 0;*/
+/*	if class = 2 then number = 6;*/
+/*	if class = 3 then number = 8;*/
+/**/
+/*	print class number;*/
+/**/
+/*	digit_i = shape(data[iter,], 16, 16);*/
+/*	call HeatmapCont(digit_i);*/
+/*end;*/
+/**/
+/*quit;*/
