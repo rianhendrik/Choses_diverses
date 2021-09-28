@@ -1,5 +1,6 @@
 #Assignment 4 - MARS
 wd_linux = "/home/rian/Dropbox/2. TRG880/1. Assignments/Assignment 4"
+wd_windows = "C:/Users/rianh/Dropbox/2. TRG880/1. Assignments/Assignment 4"
 setwd(wd_linux)
 library(scatterplot3d)
 d = openxlsx::read.xlsx("ex3.xlsx", cols = c(1, 2,3))
@@ -8,21 +9,28 @@ d = openxlsx::read.xlsx("ex3.xlsx", cols = c(1, 2,3))
 n = nrow(d)
 p = ncol(d)-1
 #Surface plot of y against x1 and x2
+
 q1plot = scatterplot3d(d$x1, d$x2, d$y, color = "blue", pch = 16, type = "h",
                        xlab = "X1",
                        ylab = "X2",
-                       zlab = "Y")
+                       zlab = "Y",
+                       main = "3D scatterplot of the data")
+
+#Surface plot of y against x1 and x2
+q1plot = scatterplot3d(d$x1, d$x2, d$y, color = "blue", pch = 16, type = "h",
+                       xlab = "X1",
+                       ylab = "X2",
+                       zlab = "Y",
+                       main = "3D scatterplot of the data (including multiple linear regression plane)")
+
 data.lm <- lm(y ~ x1 + x2, data=d)
 q1plot$plane3d(data.lm)
-
-
-#par(mfrow=c(1,3))
-image(data.lm, x2 ~ x1)
-contour(data.lm, x2 ~ x1)
-persp(data.lm, x2 ~ x1, zlab = "Y")
+summary(data.lm)
 
 
 m.sses = matrix(NA, nrow = 4)
+
+tss = t((d$y - mean(d$y)))%*%(d$y - mean(d$y))
 
 
 
@@ -36,7 +44,6 @@ sse = t(d$y-yhat)%*%(d$y-yhat)
 m.sses[1] = sse
 
 #Second MARS step: Determining the next best variable and knot
-x = data.frame(intercept, d$x1, d$x2)
 sses = matrix(NA, nrow = n*p, ncol = 3)
 counter = 0
 
@@ -102,8 +109,8 @@ for (i in 1:p){
     x3.1 = ifelse(d$x2 < d$x2[sses_2[opk_2,3]], d$x2, 0)
     x3.2 = ifelse(d$x2 > d$x2[sses_2[opk_2,3]], d$x2, 0)
     x = cbind(intercept, x2.1, x2.2, x3.1, x3.2,
-              h1 = (x2.1 * ifelse(var < e1, var, 0)), 
-              h2 = (x2.1 * ifelse(var > e1, var, 0)))
+              h1 = (x3.1 * ifelse(var < e1, var, 0)), 
+              h2 = (x3.1 * ifelse(var > e1, var, 0)))
     if (det(t(x)%*%x) != 0){yhat = x%*%solve(t(x)%*%x)%*%t(x)%*%d$y
     sses_3[counter,] = c(t(d$y-yhat)%*%(d$y-yhat), i, j)}
   }
@@ -140,24 +147,35 @@ if (det(t(x)%*%x) != 0){yhat = x%*%solve(t(x)%*%x)%*%t(x)%*%d$y}
 
 betas = solve(t(x)%*%x)%*%t(x)%*%d$y
 
+final_ess = t((d$y - yhat))%*%(d$y - yhat)
 
+r2 = 1- final_ess/tss
 
 
 
 #Final plot of model
+dd = rbind(d, d)
+x1s = dd[,1]
+x2s = dd[,2]
+ys = Reduce(c,list(d$y, yhat))
+class = Reduce(c, list(rep("Observed", 20), rep("Predicted", 20)))
+colors <- c("blue", "red")
+colors <- colors[as.numeric(factor(class))]
 
-q1plot = scatterplot3d(d$x1, d$x2, yhat, color = "blue", pch = 16, type = "h",
-                       xlab = "X1",
-                       ylab = "X2",
-                       zlab = "Y hat")
-data.lm <- lm(y ~ x1 + x2, data=d)
-q1plot$plane3d(data.lm)
+model_fit_plot = scatterplot3d(x1s, x2s, ys, pch = 16, color=colors, type = "h",
+                               main = "Comparison of observerd and MARS predicted values",
+                               xlab = "X1",
+                               ylab = "X2",
+                               zlab = "Y")
+legend("left", legend = unique(class),
+       col =  c("blue", "red"), pch = 16, inset = 0.1)
+q1plot$plane3d(data.lm) #what would have been fitter by multiple linear regression.
 
 
 
 
 
-#Step1: Make a uniform grid over x1 and x2
+#Make a uniform grid over x1 and x2, and evaluate the final regression function on this grid
 gs = 40
 x1g = seq(min(d$x1), max(d$x1), length.out = gs)
 x2g = seq(min(d$x2), max(d$x2), length.out = gs)
@@ -191,31 +209,26 @@ for (i in 1:length(x1g)){
 }
 
 
+
+
+
+
+
 library(rgl)
-# Create some dummy data
-dat <- replicate(2, 1:3)
-
 # Initialize the scene, no data plotted
-plot3d(dat, type = 'n', xlim = c(-1, 1), ylim = c(-1, 1), zlim = c(-3, 3), xlab = '', ylab = '', zlab = '') 
 
-# Add planes
-planes3d(1, 1, 1, 0, col = 'red', alpha = 0.6)
-planes3d(1, -1, 1, 0, col = 'orange', alpha = 0.6)
-planes3d(1, -1, -1, -0.8, col = 'blue', alpha = 0.6)
+coords = cbind(xpairs, yhats)
+open3d()
+plot3d(d$x1, d$x2, d$y, type = "s", col = "red", size = 1) 
+rglwidget()
+plot3d(xpairs[,1], xpairs[,2], yhats, type = "s", col = "red", size = 1)
+rglwidget()
+# Add our plain
+planes3d(coords, type = "s", col = "red", size = 1)
+#planes3d(betas[2:7], betas[2:7], -1, betas[1], type = "s", col = "red")
+?planes3d
 
 
-n <- 20
-x <- y <- seq(-1, 1, length = n)
-region <- expand.grid(x = x, y = y)
-
-z1 <- matrix(-(region$x + region$y), n, n)
-z2 <- matrix(-region$x + region$y, n, n)
-z3 <- matrix(region$x - region$y - 0.8, n, n)
-
-surface3d(x, y, z1, back = 'line', front = 'line', col = 'red', lwd = 1.5, alpha = 0.4)
-surface3d(x, y, z2, back = 'line', front = 'line', col = 'orange', lwd = 1.5, alpha = 0.4)
-surface3d(x, y, z3, back = 'line', front = 'line', col = 'blue', lwd = 1.5, alpha = 0.4)
-axes3d()
 
 
 
